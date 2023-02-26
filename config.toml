@@ -1,4 +1,4 @@
-baseURL = "https://majmunu.github.io/"
+baseURL = "https://majmunu.github.io/quartz/"
 languageCode = "en-us"
 relativeURLs = false
 disablePathToLower = true
