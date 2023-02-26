@@ -138,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "5308f3dceb8b8837",
@@ -174,9 +174,11 @@
   },
   "active": "e00a5329f2606c08",
   "lastOpenFiles": [
+    "content/工作笔记/个人仓库/杂技.md",
+    "content/工作笔记/个人仓库/MarkDown语法 超详细教程.md",
+    "content/_index.md",
     "content/工作笔记/个人仓库/个人仓库目录.md",
     "content/工作笔记/个人仓库/配置环境.md",
-    "content/_index.md",
     "content/工作笔记/个人仓库/Antd/antd轮播图带箭头样式.md",
     "content/工作笔记/个人仓库/Antd/Antd目录.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
@@ -210,8 +212,6 @@
     "个人仓库/Css/Grid 布局.md",
     "个人仓库/JavaScript/数组/Array.prototype.includes().md",
     "每日笔记/日/2023-02-18.md",
-    "个人仓库/Vscode快捷键.md",
-    "个人仓库/JavaScript/Aarry.md",
-    "个人仓库/JavaScript/数组/Array.prototype.at().md"
+    "个人仓库/Vscode快捷键.md"
   ]
 }
