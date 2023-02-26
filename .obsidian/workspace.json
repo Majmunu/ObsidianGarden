@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "67d07a9deca10c96",
+    "type": "split",
+    "children": [
+      {
+        "id": "7976a888504a06aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e00a5329f2606c08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/_index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5ce90adf2171b3c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "594845450e5379bd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d762abc4c21cd94b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2a82b3b9b298bf2d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Redux如何工",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "17b90fec8641389c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b62ab0ccdabe343c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d93fe11b9c8de176",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8318c278dd2e9704",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/_index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "321617495baa4255",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/_index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1617eeae7ebf9894",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7671b3b14de62c3b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/_index.md"
+              }
+            }
+          },
+          {
+            "id": "b1d0b5bbdd47b9e7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "5308f3dceb8b8837",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5f54640a06d8d87",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 355.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "periodic-notes:Open today": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "e00a5329f2606c08",
+  "lastOpenFiles": [
+    "content/工作笔记/个人仓库/个人仓库目录.md",
+    "content/工作笔记/个人仓库/配置环境.md",
+    "content/_index.md",
+    "content/工作笔记/个人仓库/Antd/antd轮播图带箭头样式.md",
+    "content/工作笔记/个人仓库/Antd/Antd目录.md",
+    "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
+    "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
+    "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
+    "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
+    "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
+    "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
+    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
+    "个人仓库/git/git相关.md",
+    "个人仓库/git/GitHub Copilot 键盘快捷键.md",
+    "个人仓库/git/Github学生开发包.md",
+    "个人仓库/Typescript/基础.md",
+    "个人仓库/React/http自定义钩子.md",
+    "每日笔记/日/2023-02-25.md",
+    "个人仓库/React/ReduxTool.md",
+    "个人仓库/React/Ref扩展.md",
+    "个人仓库/React/React扩展.md",
+    "个人仓库/NextJs/NextJs.md",
+    "个人仓库/配置环境.md",
+    "个人仓库/杂技.md",
+    "个人仓库/MarkDown语法 超详细教程.md",
+    "模板/公司账号密码.md",
+    "模板/Pasted image 20230215162902.png",
+    "模板/Pasted image 20230128180704.png",
+    "模板/Pasted image 20221211144611.png",
+    "模板/未命名.md",
+    "个人仓库/Css/Grid 布局.md",
+    "个人仓库/JavaScript/数组/Array.prototype.includes().md",
+    "每日笔记/日/2023-02-18.md",
+    "个人仓库/Vscode快捷键.md",
+    "个人仓库/JavaScript/Aarry.md",
+    "个人仓库/JavaScript/数组/Array.prototype.at().md"
+  ]
+}

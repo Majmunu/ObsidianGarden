@@ -1,0 +1,31 @@
+{
+  "githubRepo": "Obsidian-Garden",
+  "githubToken": "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",
+  "githubUserName": "Majmunu",
+  "gardenBaseUrl": "https://wangc.tech/",
+  "prHistory": [],
+  "baseTheme": "light",
+  "theme": "{\"name\":\"Christmas\",\"author\":\"deathau\",\"repo\":\"deathau/obsidian-christmas-theme\",\"screenshot\":\"screenshot.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/deathau/obsidian-christmas-theme/HEAD/theme.css\"}",
+  "faviconPath": "",
+  "showRibbonIcon": true,
+  "noteSettingsIsInitialized": true,
+  "siteName": "Majmunu's Digital Garden",
+  "slugifyEnabled": true,
+  "noteIconKey": "dg-note-icon",
+  "defaultNoteIcon": "",
+  "showNoteIconOnTitle": false,
+  "showNoteIconInFileTree": false,
+  "showNoteIconOnInternalLink": false,
+  "defaultNoteSettings": {
+    "dgHomeLink": true,
+    "dgPassFrontmatter": false,
+    "dgShowBacklinks": true,
+    "dgShowLocalGraph": true,
+    "dgShowInlineTitle": true,
+    "dgShowFileTree": true,
+    "dgEnableSearch": true,
+    "dgShowToc": true,
+    "dgLinkPreview": true,
+    "dgShowTags": true
+  }
+}
