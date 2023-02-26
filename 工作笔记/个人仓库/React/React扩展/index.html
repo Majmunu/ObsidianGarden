@@ -1,0 +1,461 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="1. setState setState更新状态的2种写法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  (1). setState(stateChange, [callback])------对象式的setState 1."><meta property="og:title" content><meta property="og:description" content="1. setState setState更新状态的2种写法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  (1). setState(stateChange, [callback])------对象式的setState 1."><meta property="og:type" content="website"><meta property="og:image" content="https://quartz.jzhao.xyz/icon.png"><meta property="og:url" content="https://quartz.jzhao.xyz/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93/React/React%E6%89%A9%E5%B1%95/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="1. setState setState更新状态的2种写法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  (1). setState(stateChange, [callback])------对象式的setState 1."><meta name=twitter:image content="https://quartz.jzhao.xyz/icon.png"><meta name=twitter:site content="_jzhao"><title>🪴 Quartz 3.3</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://quartz.jzhao.xyz//icon.png><link href=https://quartz.jzhao.xyz/styles.b369a84b3c6e6bfd686ad1f9da65641c.min.css rel=stylesheet><link href=https://quartz.jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://quartz.jzhao.xyz/js/darkmode.63d6a3e095d0bd2b935b62adec9dc11b.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
+<link rel=preload href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css as=style onload='this.onload=null,this.rel="stylesheet"' integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script async src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script async src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script async src=https://quartz.jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://quartz.jzhao.xyz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://quartz.jzhao.xyz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://quartz.jzhao.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.2c0a976edd719ee1de983c281aafa131.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.f4b867a94cd4c842ced7fe4c3203de56.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://quartz.jzhao.xyz",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://quartz.jzhao.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/quartz.jzhao.xyz\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script><script defer data-domain=quartz.jzhao.xyz src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://quartz.jzhao.xyz/>🪴 Quartz 3.3</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><p class=meta>Last updated
+Unknown
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/%e5%b7%a5%e4%bd%9c%e7%ac%94%e8%ae%b0/%e4%b8%aa%e4%ba%ba%e4%bb%93%e5%ba%93/React/React%e6%89%a9%e5%b1%95.md rel=noopener>Edit Source</a></p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#1-setstate>1. setState</a><ol><li><a href=#setstate更新状态的2种写法>setState更新状态的2种写法</a></li></ol></li><li><a href=#2-lazyload>2. lazyLoad</a><ol><li><a href=#路由组件的lazyload>路由组件的lazyLoad</a></li></ol></li><li><a href=#3-hooks>3. Hooks</a><ol><li></li></ol></li><li><a href=#4-fragment>4. Fragment</a><ol><li><a href=#使用>使用</a></li><li><a href=#作用>作用</a></li></ol></li><li><a href=#5-context>5. Context</a><ol><li><a href=#理解>理解</a></li><li><a href=#使用-1>使用</a></li><li><a href=#注意>注意</a></li></ol></li><li><a href=#6-组件优化>6. 组件优化</a><ol><li><a href=#component的2个问题>Component的2个问题</a></li><li><a href=#效率高的做法>效率高的做法</a></li><li><a href=#原因>原因</a></li><li><a href=#解决>解决</a></li></ol></li><li><a href=#7-render-props>7. render props</a><ol><li><a href=#如何向组件内部动态传入带内容的结构标签>如何向组件内部动态传入带内容的结构(标签)?</a></li><li><a href=#children-props>children props</a></li><li><a href=#render-props>render props</a></li></ol></li><li><a href=#8-错误边界>8. 错误边界</a><ol><li></li></ol></li><li><a href=#9-组件通信方式总结>9. 组件通信方式总结</a><ol><li></li></ol></li></ol></nav></details></aside><a href=#1-setstate><h2 id=1-setstate><span class=hanchor arialabel=Anchor># </span>1. setState</h2></a><a href=#setstate更新状态的2种写法><h3 id=setstate更新状态的2种写法><span class=hanchor arialabel=Anchor># </span>setState更新状态的2种写法</h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>	(1). setState(stateChange, [callback])------对象式的setState
+</span></span><span class=line><span class=cl>            1.stateChange为状态改变对象(该对象可以体现出状态的更改)
+</span></span><span class=line><span class=cl>            2.callback是可选的回调函数, 它在状态更新完毕、界面也更新后(render调用后)才被调用
+</span></span><span class=line><span class=cl>					
+</span></span><span class=line><span class=cl>	(2). setState(updater, [callback])------函数式的setState
+</span></span><span class=line><span class=cl>            1.updater为返回stateChange对象的函数。
+</span></span><span class=line><span class=cl>            2.updater可以接收到state和props。
+</span></span><span class=line><span class=cl>            4.callback是可选的回调函数, 它在状态更新、界面也更新后(render调用后)才被调用。
+</span></span><span class=line><span class=cl>总结:
+</span></span><span class=line><span class=cl>		1.对象式的setState是函数式的setState的简写方式(语法糖)
+</span></span><span class=line><span class=cl>		2.使用原则：
+</span></span><span class=line><span class=cl>				(1).如果新状态不依赖于原状态 ===&gt; 使用对象方式
+</span></span><span class=line><span class=cl>				(2).如果新状态依赖于原状态 ===&gt; 使用函数方式
+</span></span><span class=line><span class=cl>				(3).如果需要在setState()执行后获取最新的状态数据, 
+</span></span><span class=line><span class=cl>					要在第二个callback函数中读取
+</span></span></code></pre></td></tr></table></div></div><hr><a href=#2-lazyload><h2 id=2-lazyload><span class=hanchor arialabel=Anchor># </span>2. lazyLoad</h2></a><a href=#路由组件的lazyload><h3 id=路由组件的lazyload><span class=hanchor arialabel=Anchor># </span>路由组件的lazyLoad</h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl>	<span class=c1>//1.通过React的lazy函数配合import()函数动态加载路由组件 ===&gt; 路由组件代码会被分开打包
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=kr>const</span> <span class=nx>Login</span> <span class=o>=</span> <span class=nx>lazy</span><span class=p>(()=&gt;</span><span class=kr>import</span><span class=p>(</span><span class=s1>&#39;@/pages/Login&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>	<span class=c1>//2.通过&lt;Suspense&gt;指定在加载得到路由打包文件前显示一个自定义loading界面
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=o>&lt;</span><span class=nx>Suspense</span> <span class=nx>fallback</span><span class=o>=</span><span class=p>{</span><span class=o>&lt;</span><span class=nx>h1</span><span class=o>&gt;</span><span class=nx>loading</span><span class=p>.....</span><span class=o>&lt;</span><span class=err>/h1&gt;}&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Switch</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=o>&lt;</span><span class=nx>Route</span> <span class=nx>path</span><span class=o>=</span><span class=s2>&#34;/xxx&#34;</span> <span class=nx>component</span><span class=o>=</span><span class=p>{</span><span class=nx>Xxxx</span><span class=p>}</span><span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>            <span class=o>&lt;</span><span class=nx>Redirect</span> <span class=nx>to</span><span class=o>=</span><span class=s2>&#34;/login&#34;</span><span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=err>/Switch&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/Suspense&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><hr><a href=#3-hooks><h2 id=3-hooks><span class=hanchor arialabel=Anchor># </span>3. Hooks</h2></a><a href=#1-react-hookhooks是什么><h4 id=1-react-hookhooks是什么><span class=hanchor arialabel=Anchor># </span>1. React Hook/Hooks是什么?</h4></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(1). Hook是React 16.8.0版本增加的新特性/新语法
+</span></span><span class=line><span class=cl>(2). 可以让你在函数组件中使用 state 以及其他的 React 特性
+</span></span></code></pre></td></tr></table></div></div><a href=#2-三个常用的hook><h4 id=2-三个常用的hook><span class=hanchor arialabel=Anchor># </span>2. 三个常用的Hook</h4></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(1). State Hook: React.useState()
+</span></span><span class=line><span class=cl>(2). Effect Hook: React.useEffect()
+</span></span><span class=line><span class=cl>(3). Ref Hook: React.useRef()
+</span></span></code></pre></td></tr></table></div></div><a href=#3-state-hook><h4 id=3-state-hook><span class=hanchor arialabel=Anchor># </span>3. State Hook</h4></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(1). State Hook让函数组件也可以有state状态, 并进行状态数据的读写操作
+</span></span><span class=line><span class=cl>(2). 语法: const [xxx, setXxx] = React.useState(initValue)  
+</span></span><span class=line><span class=cl>(3). useState()说明:
+</span></span><span class=line><span class=cl>        参数: 第一次初始化指定的值在内部作缓存
+</span></span><span class=line><span class=cl>        返回值: 包含2个元素的数组, 第1个为内部当前状态值, 第2个为更新状态值的函数
+</span></span><span class=line><span class=cl>(4). setXxx()2种写法:
+</span></span><span class=line><span class=cl>        setXxx(newValue): 参数为非函数值, 直接指定新的状态值, 内部用其覆盖原来的状态值
+</span></span><span class=line><span class=cl>        setXxx(value =&gt; newValue): 参数为函数, 接收原本的状态值, 返回新的状态值, 内部用其覆盖原来的状态值
+</span></span></code></pre></td></tr></table></div></div><a href=#4-effect-hook><h4 id=4-effect-hook><span class=hanchor arialabel=Anchor># </span>4. Effect Hook</h4></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(1). Effect Hook 可以让你在函数组件中执行副作用操作(用于模拟类组件中的生命周期钩子)
+</span></span><span class=line><span class=cl>(2). React中的副作用操作:
+</span></span><span class=line><span class=cl>        发ajax请求数据获取
+</span></span><span class=line><span class=cl>        设置订阅 / 启动定时器（防抖）
+</span></span><span class=line><span class=cl>        手动更改真实DOM
+</span></span><span class=line><span class=cl>(3). 语法和说明: 
+</span></span><span class=line><span class=cl>        useEffect(() =&gt; { 
+</span></span><span class=line><span class=cl>          // 在此可以执行任何带副作用操作
+</span></span><span class=line><span class=cl>          return () =&gt; { // 在组件卸载前执行
+</span></span><span class=line><span class=cl>            // 在此做一些收尾工作, 比如清除定时器/取消订阅等
+</span></span><span class=line><span class=cl>          }
+</span></span><span class=line><span class=cl>        }, [stateValue]) // 如果指定的是[], 回调函数只会在第一次render()后执行
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>(4). 可以把 useEffect Hook 看做如下三个函数的组合
+</span></span><span class=line><span class=cl>        componentDidMount()
+</span></span><span class=line><span class=cl>        componentDidUpdate()
+</span></span><span class=line><span class=cl>    	componentWillUnmount() 
+</span></span></code></pre></td></tr></table></div></div><a href=#5-ref-hook><h4 id=5-ref-hook><span class=hanchor arialabel=Anchor># </span>5. Ref Hook</h4></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>(1). Ref Hook可以在函数组件中存储/查找组件内的标签或任意其它数据
+</span></span><span class=line><span class=cl>(2). 语法: const refContainer = useRef()
+</span></span><span class=line><span class=cl>(3). 作用:保存标签对象,功能与React.createRef()一样
+</span></span></code></pre></td></tr></table></div></div><a href=#6-reducer-hook><h4 id=6-reducer-hook><span class=hanchor arialabel=Anchor># </span>6. Reducer Hook</h4></a><p><code>功能类似于useState，但更加强大</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-react.jsx data-lang=react.jsx><span class=line><span class=cl><span class=kr>const</span> <span class=p>[</span><span class=nx>state</span><span class=p>,</span> <span class=nx>dispatch</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useReducer</span><span class=p>(</span><span class=nx>reducerFn</span><span class=p>,</span><span class=s1>&#39;初期値&#39;</span><span class=p>,</span><span class=nx>initFn</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>reducer</code>是用于更新的函数，是用于执行的调用函数。 （声明变量时，可以预先设置状态更新方法。 ）<code>state``dispatch``reducer</code></li></ul><table><thead><tr><th style=text-align:center></th><th style=text-align:center>useState</th><th style=text-align:center>useReducer</th></tr></thead><tbody><tr><td style=text-align:center>可以处理的状态类型</td><td style=text-align:center>数字、字符串、对象和逻辑值</td><td style=text-align:center>对象、数组</td></tr><tr><td style=text-align:center>处理相关状态</td><td style=text-align:center>☓</td><td style=text-align:center>可以同时处理多个</td></tr><tr><td style=text-align:center>本地或全局</td><td style=text-align:center>本地</td><td style=text-align:center>与全局使用上下文 （） 一起处理</td></tr><tr><td style=text-align:center>在 Redux 中实现的状态管理现在可以使用使用上下文还原器实现，并且不再需要 Redux。</td><td></td><td></td></tr></tbody></table><a href=#示例-1状态为单数><h4 id=示例-1状态为单数><span class=hanchor arialabel=Anchor># </span>示例 1：状态为单数</h4></a><p>counter.jsx</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>//useReducerをimport
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=nx>React</span><span class=p>,</span> <span class=p>{</span><span class=nx>useReducer</span><span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>Button</span> <span class=nx>from</span> <span class=s1>&#39;@material-ui/core/Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>ButtonGroup</span> <span class=nx>from</span> <span class=s1>&#39;@material-ui/core/ButtonGroup&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//counterの初期値を0に設定
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>initialState</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl><span class=c1>//reducer関数を作成
+</span></span></span><span class=line><span class=cl><span class=c1>//countStateとactionを渡して、新しいcountStateを返すように実装する
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>reducerFunc</span> <span class=o>=</span> <span class=p>(</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>action</span><span class=p>)=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=c1>//reducer関数にincrement、increment、reset処理を書く
+</span></span></span><span class=line><span class=cl><span class=c1>//どの処理を渡すかはactionを渡すことによって判断する
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>switch</span> <span class=p>(</span><span class=nx>action</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;increment&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>countState</span> <span class=o>+</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;decrement&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>countState</span> <span class=o>-</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;reset&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>initialState</span>
+</span></span><span class=line><span class=cl>    <span class=k>default</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>countState</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Counter</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=c1>//作成したreducerFunc関数とcountStateをuseReducerに渡す
+</span></span></span><span class=line><span class=cl><span class=c1>//useReducerはcountStateとdispatchをペアで返すので、それぞれを分割代入
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=p>[</span><span class=nx>count</span><span class=p>,</span> <span class=nx>dispatch</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useReducer</span><span class=p>(</span><span class=nx>reducerFunc</span><span class=p>,</span> <span class=nx>initialState</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>//カウント数とそれぞれのactionを実行する&lt;Button/&gt;を設置する
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>h2</span><span class=o>&gt;</span><span class=nx>カウント</span><span class=err>：</span><span class=p>{</span><span class=nx>count</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/h2&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>ButtonGroup</span> <span class=nx>color</span><span class=o>=</span><span class=s2>&#34;primary&#34;</span> <span class=nx>aria</span><span class=o>-</span><span class=nx>label</span><span class=o>=</span><span class=s2>&#34;outlined primary button group&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>(</span><span class=s1>&#39;increment&#39;</span><span class=p>)}</span><span class=o>&gt;</span><span class=nx>increment</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>(</span><span class=s1>&#39;decrement&#39;</span><span class=p>)}</span><span class=o>&gt;</span><span class=nx>decrement</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>(</span><span class=s1>&#39;reset&#39;</span><span class=p>)}</span><span class=o>&gt;</span><span class=nx>reset</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=err>/ButtonGroup&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=nx>Counter</span>
+</span></span></code></pre></td></tr></table></div></div><p>[
+<img src=https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/218656/08303c75-70fd-9533-d07c-de46bad7b79e.gif width=auto alt>[(https://camo.qiitausercontent.com/6a5684574d8073f1767be0ce2d91073b45c801a6/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3231383635362f30383330336337352d373066642d393533332d643037632d6465343662616437623739652e676966)</p><a href=#示例-2多个状态><h4 id=示例-2多个状态><span class=hanchor arialabel=Anchor># </span>示例 2：多个状态</h4></a><p>counter2.jsx</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>//useReducerをimport
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=nx>React</span><span class=p>,</span> <span class=p>{</span><span class=nx>useReducer</span><span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>Button</span> <span class=nx>from</span> <span class=s1>&#39;@material-ui/core/Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>ButtonGroup</span> <span class=nx>from</span> <span class=s1>&#39;@material-ui/core/ButtonGroup&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//counterの初期値を0に設定
+</span></span></span><span class=line><span class=cl><span class=c1>//2つのcountStateを扱う。それぞれのinitialStateを設定
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>initialState</span> <span class=o>=</span><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>firstCounter</span><span class=o>:</span> <span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>secondCounter</span><span class=o>:</span> <span class=mi>100</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c1>//reducer関数を作成
+</span></span></span><span class=line><span class=cl><span class=c1>//countStateとactionを渡して、新しいcountStateを返すように実装する
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>reducerFunc</span> <span class=o>=</span> <span class=p>(</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>action</span><span class=p>)=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=c1>//reducer関数にincrement、increment、reset処理を書く
+</span></span></span><span class=line><span class=cl><span class=c1>//どの処理を渡すかはactionを渡すことによって判断する
+</span></span></span><span class=line><span class=cl><span class=c1>//switch文のactionをaction.typeに変更
+</span></span></span><span class=line><span class=cl><span class=c1>//firstCounter、secondCounter用にcaseを設定
+</span></span></span><span class=line><span class=cl><span class=c1>//複数のcounterStateを持っている場合は、更新前のcounterStateを展開し、オブジェクトのマージを行う
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>switch</span> <span class=p>(</span><span class=nx>action</span><span class=p>.</span><span class=nx>type</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;increment1&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=p>{...</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>firstCounter</span><span class=o>:</span> <span class=nx>countState</span><span class=p>.</span><span class=nx>firstCounter</span> <span class=o>+</span> <span class=nx>action</span><span class=p>.</span><span class=nx>value</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;decrement1&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=p>{...</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>firstCounter</span><span class=o>:</span> <span class=nx>countState</span><span class=p>.</span><span class=nx>firstCounter</span> <span class=o>-</span> <span class=nx>action</span><span class=p>.</span><span class=nx>value</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;increment2&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=p>{...</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>secondCounter</span><span class=o>:</span> <span class=nx>countState</span><span class=p>.</span><span class=nx>secondCounter</span> <span class=o>+</span> <span class=nx>action</span><span class=p>.</span><span class=nx>value</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;decrement2&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=p>{...</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>secondCounter</span><span class=o>:</span> <span class=nx>countState</span><span class=p>.</span><span class=nx>secondCounter</span> <span class=o>-</span> <span class=nx>action</span><span class=p>.</span><span class=nx>value</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;reset1&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=p>{...</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>firstCounter</span><span class=o>:</span> <span class=nx>initialState</span><span class=p>.</span><span class=nx>firstCounter</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>case</span> <span class=s1>&#39;reset2&#39;</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=p>{...</span><span class=nx>countState</span><span class=p>,</span> <span class=nx>secondCounter</span><span class=o>:</span> <span class=nx>initialState</span><span class=p>.</span><span class=nx>secondCounter</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>default</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>countState</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Counter2</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=c1>//作成したreducerFunc関数とcountStateをuseReducerに渡す
+</span></span></span><span class=line><span class=cl><span class=c1>//useReducerはcountStateとdispatchをペアで返すので、それぞれを分割代入
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kr>const</span> <span class=p>[</span><span class=nx>count</span><span class=p>,</span> <span class=nx>dispatch</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useReducer</span><span class=p>(</span><span class=nx>reducerFunc</span><span class=p>,</span> <span class=nx>initialState</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>//カウント数とそれぞれのactionを実行する&lt;Button/&gt;を設置する
+</span></span></span><span class=line><span class=cl><span class=c1>//dispatchで渡しているactionをオブジェクトに変更して、typeとvalueを設定
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>h2</span><span class=o>&gt;</span><span class=nx>カウント</span><span class=err>：</span><span class=p>{</span><span class=nx>count</span><span class=p>.</span><span class=nx>firstCounter</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/h2&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>ButtonGroup</span> <span class=nx>color</span><span class=o>=</span><span class=s2>&#34;primary&#34;</span> <span class=nx>aria</span><span class=o>-</span><span class=nx>label</span><span class=o>=</span><span class=s2>&#34;outlined primary button group&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>({</span><span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;increment1&#39;</span><span class=p>,</span> <span class=nx>value</span><span class=o>:</span> <span class=mi>1</span><span class=p>})}</span><span class=o>&gt;</span><span class=nx>increment1</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>({</span><span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;decrement1&#39;</span><span class=p>,</span> <span class=nx>value</span><span class=o>:</span> <span class=mi>1</span><span class=p>})}</span><span class=o>&gt;</span><span class=nx>decrement1</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>({</span><span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;reset1&#39;</span><span class=p>})}</span><span class=o>&gt;</span><span class=nx>reset</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=err>/ButtonGroup&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>h2</span><span class=o>&gt;</span><span class=nx>カウント2</span><span class=err>：</span><span class=p>{</span><span class=nx>count</span><span class=p>.</span><span class=nx>secondCounter</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/h2&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>ButtonGroup</span> <span class=nx>color</span><span class=o>=</span><span class=s2>&#34;secondary&#34;</span> <span class=nx>aria</span><span class=o>-</span><span class=nx>label</span><span class=o>=</span><span class=s2>&#34;outlined primary button group&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>({</span><span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;increment2&#39;</span><span class=p>,</span> <span class=nx>value</span><span class=o>:</span> <span class=mi>100</span><span class=p>})}</span><span class=o>&gt;</span><span class=nx>increment2</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>({</span><span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;decrement2&#39;</span><span class=p>,</span> <span class=nx>value</span><span class=o>:</span> <span class=mi>100</span><span class=p>})}</span><span class=o>&gt;</span><span class=nx>decrement2</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>onClick</span><span class=o>=</span><span class=p>{()=&gt;</span><span class=nx>dispatch</span><span class=p>({</span><span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;reset2&#39;</span><span class=p>})}</span><span class=o>&gt;</span><span class=nx>reset</span><span class=o>&lt;</span><span class=err>/Button&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=err>/ButtonGroup&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=nx>Counter2</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=httpsqiita-image-stores3ap-northeast-1amazonawscom0218656b89205ba-f8a5-14a6-4021-8ea58f3f6e5dgifhttpscamoqiitausercontentcomea515db39635c94ee8576532beb80ade2fd550b168747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3231383635362f62383932303562612d663861352d313461362d343032312d3865613538663366366535642e676966><a href=https://camo.qiitausercontent.com/ea515db39635c94ee8576532beb80ade2fd550b1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3231383635362f62383932303562612d663861352d313461362d343032312d3865613538663366366535642e676966 rel=noopener><img src=https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/218656/b89205ba-f8a5-14a6-4021-8ea58f3f6e5d.gif width=auto alt></a></h4><hr><a href=#4-fragment><h2 id=4-fragment><span class=hanchor arialabel=Anchor># </span>4. Fragment</h2></a><a href=#使用><h3 id=使用><span class=hanchor arialabel=Anchor># </span>使用</h3></a><pre><code>&lt;Fragment&gt;&lt;Fragment&gt;
+&lt;&gt;&lt;/&gt;
+</code></pre><a href=#作用><h3 id=作用><span class=hanchor arialabel=Anchor># </span>作用</h3></a><blockquote><p>可以不用必须有一个真实的DOM根标签了</p></blockquote><hr><a href=#5-context><h2 id=5-context><span class=hanchor arialabel=Anchor># </span>5. Context</h2></a><a href=#理解><h3 id=理解><span class=hanchor arialabel=Anchor># </span>理解</h3></a><blockquote><p>一种组件间通信方式, 常用于【祖组件】与【后代组件】间通信</p></blockquote><a href=#使用-1><h3 id=使用-1><span class=hanchor arialabel=Anchor># </span>使用</h3></a><blockquote><p>读取Consumer</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=mi>1</span><span class=p>)</span> <span class=nx>创建Context容器对象</span><span class=err>：</span>
+</span></span><span class=line><span class=cl>	<span class=kr>const</span> <span class=nx>XxxContext</span> <span class=o>=</span> <span class=nx>React</span><span class=p>.</span><span class=nx>createContext</span><span class=p>()</span>  
+</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl><span class=mi>2</span><span class=p>)</span> <span class=nx>渲染子组时</span><span class=err>，</span><span class=nx>外面包裹xxxContext</span><span class=p>.</span><span class=nx>Provider</span><span class=p>,</span> <span class=nx>通过value属性给后代组件传递数据</span><span class=err>：</span>
+</span></span><span class=line><span class=cl>	<span class=o>&lt;</span><span class=nx>xxxContext</span><span class=p>.</span><span class=nx>Provider</span> <span class=nx>value</span><span class=o>=</span><span class=p>{</span><span class=nx>数据</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>		<span class=nx>子组件</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/xxxContext.Provider&gt;</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl><span class=mi>3</span><span class=p>)</span> <span class=nx>后代组件读取数据</span><span class=err>：</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=c1>//第一种方式:仅适用于类组件 
+</span></span></span><span class=line><span class=cl><span class=c1></span>	  <span class=kr>static</span> <span class=nx>contextType</span> <span class=o>=</span> <span class=nx>xxxContext</span>  <span class=c1>// 声明接收context
+</span></span></span><span class=line><span class=cl><span class=c1></span>	  <span class=k>this</span><span class=p>.</span><span class=nx>context</span> <span class=c1>// 读取context中的value数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>	  
+</span></span><span class=line><span class=cl>	<span class=c1>//第二种方式: 函数组件与类组件都可以
+</span></span></span><span class=line><span class=cl><span class=c1></span>	  <span class=o>&lt;</span><span class=nx>xxxContext</span><span class=p>.</span><span class=nx>Consumer</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>	    <span class=p>{</span>
+</span></span><span class=line><span class=cl>	      <span class=nx>value</span> <span class=p>=&gt;</span> <span class=p>(</span> <span class=c1>// value就是context中的value数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>	        <span class=nx>要显示的内容</span>
+</span></span><span class=line><span class=cl>	      <span class=p>)</span>
+</span></span><span class=line><span class=cl>	    <span class=p>}</span>
+</span></span><span class=line><span class=cl>	  <span class=o>&lt;</span><span class=err>/xxxContext.Consumer&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#注意><h3 id=注意><span class=hanchor arialabel=Anchor># </span>注意</h3></a><pre><code>在应用开发中一般不用context, 一般都用它的封装react插件
+</code></pre><hr><a href=#6-组件优化><h2 id=6-组件优化><span class=hanchor arialabel=Anchor># </span>6. 组件优化</h2></a><a href=#component的2个问题><h3 id=component的2个问题><span class=hanchor arialabel=Anchor># </span>Component的2个问题</h3></a><blockquote><ol><li><p>只要执行setState(),即使不改变状态数据, 组件也会重新render() ==> 效率低</p></li><li><p>只当前组件重新render(), 就会自动重新render子组件，纵使子组件没有用到父组件的任何数据 ==> 效率低</p></li></ol></blockquote><a href=#效率高的做法><h3 id=效率高的做法><span class=hanchor arialabel=Anchor># </span>效率高的做法</h3></a><blockquote><p>只有当组件的state或props数据发生改变时才重新render()</p></blockquote><a href=#原因><h3 id=原因><span class=hanchor arialabel=Anchor># </span>原因</h3></a><blockquote><p>Component中的shouldComponentUpdate()总是返回true</p></blockquote><a href=#解决><h3 id=解决><span class=hanchor arialabel=Anchor># </span>解决</h3></a><pre><code>办法1: 
+	重写shouldComponentUpdate()方法
+	比较新旧state或props数据, 如果有变化才返回true, 如果没有返回false
+办法2:  
+	使用PureComponent
+	PureComponent重写了shouldComponentUpdate(), 只有state或props数据有变化才返回true
+	注意: 
+		只是进行state和props数据的浅比较, 如果只是数据对象内部数据变了, 返回false  
+		不要直接修改state数据, 而是要产生新数据
+项目中一般使用PureComponent来优化
+</code></pre><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl>	<span class=nx>函数式组件使用</span> <span class=nx>React</span><span class=p>.</span><span class=nx>memo</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>ToBeBetterComponent</span> <span class=o>=</span> <span class=nx>React</span><span class=p>.</span><span class=nx>memo</span><span class=p>(</span><span class=kd>function</span> <span class=nx>MyComponent</span><span class=p>(</span><span class=nx>props</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// only renders if props have changed
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>})</span>
+</span></span></code></pre></td></tr></table></div></div><hr><a href=#7-render-props><h2 id=7-render-props><span class=hanchor arialabel=Anchor># </span>7. render props</h2></a><a href=#如何向组件内部动态传入带内容的结构标签><h3 id=如何向组件内部动态传入带内容的结构标签><span class=hanchor arialabel=Anchor># </span>如何向组件内部动态传入带内容的结构(标签)?</h3></a><pre><code>Vue中: 
+	使用slot技术, 也就是通过组件标签体传入结构  &lt;A&gt;&lt;B/&gt;&lt;/A&gt;
+React中:
+	使用children props: 通过组件标签体传入结构
+	使用render props: 通过组件标签属性传入结构,而且可以携带数据，一般用render函数属性
+</code></pre><a href=#children-props><h3 id=children-props><span class=hanchor arialabel=Anchor># </span>children props</h3></a><pre><code>&lt;A&gt;
+  &lt;B&gt;xxxx&lt;/B&gt;
+&lt;/A&gt;
+{this.props.children}
+问题: 如果B组件需要A组件内的数据, ==&gt; 做不到 
+</code></pre><a href=#render-props><h3 id=render-props><span class=hanchor arialabel=Anchor># </span>render props</h3></a><pre><code>&lt;A render={(data) =&gt; &lt;C data={data}&gt;&lt;/C&gt;}&gt;&lt;/A&gt;
+A组件: {this.props.render(内部state数据)}
+C组件: 读取A组件传入的数据显示 {this.props.data} 
+</code></pre><hr><a href=#8-错误边界><h2 id=8-错误边界><span class=hanchor arialabel=Anchor># </span>8. 错误边界</h2></a><a href=#理解-1><h4 id=理解-1><span class=hanchor arialabel=Anchor># </span>理解：</h4></a><p>错误边界(Error boundary)：用来捕获后代组件错误，渲染出备用页面</p><a href=#特点><h4 id=特点><span class=hanchor arialabel=Anchor># </span>特点：</h4></a><p>只能捕获后代组件生命周期产生的错误，不能捕获自己组件产生的错误和其他组件在合成事件、定时器中产生的错误</p><a href=#使用方式><h5 id=使用方式><span class=hanchor arialabel=Anchor># </span>使用方式：</h5></a><p>getDerivedStateFromError配合componentDidCatch</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// 生命周期函数，一旦后台组件报错，就会触发
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>static</span> <span class=nx>getDerivedStateFromError</span><span class=p>(</span><span class=nx>error</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>error</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// 在render之前触发
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=c1>// 返回新的state
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>return</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>hasError</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>componentDidCatch</span><span class=p>(</span><span class=nx>error</span><span class=p>,</span> <span class=nx>info</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// 统计页面的错误。发送请求发送到后台去
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>error</span><span class=p>,</span> <span class=nx>info</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#9-组件通信方式总结><h2 id=9-组件通信方式总结><span class=hanchor arialabel=Anchor># </span>9. 组件通信方式总结</h2></a><a href=#组件间的关系><h4 id=组件间的关系><span class=hanchor arialabel=Anchor># </span>组件间的关系：</h4></a><ul><li>父子组件</li><li>兄弟组件（非嵌套组件）</li><li>祖孙组件（跨级组件）</li></ul><a href=#几种通信方式><h4 id=几种通信方式><span class=hanchor arialabel=Anchor># </span>几种通信方式：</h4></a><pre><code>	1.props：
+		(1).children props
+		(2).render props
+	2.消息订阅-发布：
+		pubs-sub、event等等
+	3.集中式管理：
+		redux、dva等等
+	4.conText:
+		生产者-消费者模式
+</code></pre><a href=#比较好的搭配方式><h4 id=比较好的搭配方式><span class=hanchor arialabel=Anchor># </span>比较好的搭配方式：</h4></a><pre><code>	父子组件：props
+	兄弟组件：消息订阅-发布、集中式管理
+	祖孙组件(跨级组件)：消息订阅-发布、集中式管理、conText(开发用的少，封装插件用的多)
+</code></pre></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://quartz.jzhao.xyz/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://quartz.jzhao.xyz/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>GitHub</a></li></ul></footer></div></div></body></html>
