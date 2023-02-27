@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/notes/showcase.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/notes/showcase.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/notes/showcase.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/notes/showcase.md"
               }
             }
           },
@@ -258,8 +258,21 @@
   },
   "active": "42646a83b0b13e24",
   "lastOpenFiles": [
-    "content/notes/config.md",
     "content/notes/troubleshooting.md",
+    "content/notes/showcase.md",
+    "content/notes/setup.md",
+    "content/notes/search.md",
+    "content/notes/preview changes.md",
+    "content/notes/philosophy.md",
+    "content/notes/obsidian.md",
+    "content/notes/ignore notes.md",
+    "content/notes/hosting.md",
+    "content/notes/editing.md",
+    "content/notes/docker.md",
+    "content/notes/custom Domain.md",
+    "content/notes/config.md",
+    "content/notes/CJK + Latex Support (测试).md",
+    "content/notes/callouts.md",
     "content/_index.md",
     "content/test.md",
     "content/Record/DigitalGarden/catalogue.md",
@@ -271,22 +284,9 @@
     "content/Record/DigitalGarden/NextJs/NextJs.md",
     "content/Record/DigitalGarden/JavaScript/JAVASCRIPT.md",
     "content/Record/DigitalGarden/JavaScript/Aarry.md",
-    "content/Record/DigitalGarden/git/GIT.md",
-    "content/Record/DigitalGarden/Antd/Antd.md",
-    "content/Record/DigitalGarden/Css/CSS.md",
-    "content/Record/DigitalGarden/Css/Grid 布局.md",
-    "content/Record/DigitalGarden/Antd/antd-popover样式更改，及参数详解.md",
-    "content/Record/DigitalGarden/Antd/antd轮播图带箭头样式.md",
-    "content/notes/setup.md",
-    "content/notes/philosophy.md",
-    "content/notes/ignore notes.md",
-    "content/notes/CJK + Latex Support (测试).md",
-    "工作笔记/个人仓库/Antd/Antd目录.md",
     "工作笔记/个人仓库/Antd",
     "工作笔记/个人仓库",
     "工作笔记",
-    "content/private/private-note.md",
-    "content/notes/obsidian.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
     "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
