@@ -9,7 +9,6 @@ obsidianUIMode: preview
 	- **[[notes]]**
 	- **[[private]]**
 	- **[[Record]]**
-	- **[[styles]]**
 	- **[[templates]]**
 	- [[test]]
 

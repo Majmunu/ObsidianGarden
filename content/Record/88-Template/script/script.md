@@ -2,7 +2,8 @@
 cssclass: kanban gridlist noyaml
 tag: moc
 obsidianUIMode: preview
---- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
+---
+`button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh`
 %% Begin Waypoint %%
 - **[[script]]**
 	- [[bookfromdouban.js]]
@@ -18,14 +19,24 @@ obsidianUIMode: preview
 	- [[fetchhomepage.js]]
 	- [[moviefromdouban.js]]
 	- [[movies.js]]
-	- **[[notesList]]**
+	- **notesList**
+		- [[README]]
+		- [[view - 副本.js]]
+		- [[view.css]]
+		- [[view.js]]
 	- [[notice.js]]
 	- [[openOb.js]]
 	- [[refreshhomepage.js]]
 	- [[SwitchViews.js]]
 	- [[SwitcLightdark.js]]
-	- **[[tasksCalendar]]**
-	- **[[TasksTimeline]]**
+	- **tasksCalendar**
+		- [[README]]
+		- [[view.css]]
+		- [[view.js]]
+	- **TasksTimeline**
+		- [[README]]
+		- [[view.css]]
+		- [[view.js]]
 	- **[[template]]**
 
 %% End Waypoint %%

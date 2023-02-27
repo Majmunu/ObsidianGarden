@@ -2,7 +2,8 @@
 cssclass: kanban gridlist noyaml
 tag: moc
 obsidianUIMode: preview
---- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
+---
+`button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh`
 %% Begin Waypoint %%
 - **[[tp]]**
 	- [[tp_foldermoc-Include-subfolders]]
