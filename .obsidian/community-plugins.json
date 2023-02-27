@@ -1,6 +1,5 @@
 [
   "calendar",
-  "periodic-notes",
   "obsidian-pandoc",
   "ob-table-enhancer",
   "remotely-save",
@@ -16,11 +15,11 @@
   "templater-obsidian",
   "workspaces-plus",
   "Enhanced-editing",
-  "obsidian-admonition",
   "table-editor-obsidian",
   "obsidian-advanced-uri",
   "obsidian-another-quick-switcher",
   "obsidian-better-codeblock",
   "obsidian-better-command-palette",
-  "better-fn"
+  "better-fn",
+  "periodic-notes"
 ]
