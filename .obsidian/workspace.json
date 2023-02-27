@@ -1,22 +1,25 @@
 {
   "main": {
-    "id": "67d07a9deca10c96",
+    "id": "e8b4ea94b39a8520",
     "type": "split",
     "children": [
       {
-        "id": "24db7dcc2ef11a31",
+        "id": "8bbe2deff908dd60",
         "type": "tabs",
         "children": [
           {
-            "id": "136c7c222b09a916",
+            "id": "0ba92fb21fcd99fa",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Record/88-Template/常用工具.md",
-                "mode": "source",
+                "file": "88-Template/home.md",
+                "mode": "preview",
+                "backlinks": false,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ]
@@ -25,15 +28,16 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "5ce90adf2171b3c0",
+    "id": "687357708cbc920f",
     "type": "split",
     "children": [
       {
-        "id": "594845450e5379bd",
+        "id": "4bc1edcafd063cfb",
         "type": "tabs",
+        "dimension": 68.13048933500627,
         "children": [
           {
-            "id": "d762abc4c21cd94b",
+            "id": "37c8f55a8ef7a09c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,12 +47,12 @@
             }
           },
           {
-            "id": "2a82b3b9b298bf2d",
+            "id": "b3290ae399933a0b",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "date",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,10 +62,33 @@
             }
           },
           {
-            "id": "17b90fec8641389c",
+            "id": "3d21402f76dc34c3",
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f2c2f4dfc8473d58",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "d877e8285f98a38a",
+        "type": "tabs",
+        "dimension": 31.869510664993726,
+        "children": [
+          {
+            "id": "b37bc3d287f74512",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
               "state": {}
             }
           }
@@ -69,47 +96,87 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 276.9945435523987
   },
   "right": {
-    "id": "b62ab0ccdabe343c",
+    "id": "4e390742ffc29613",
     "type": "split",
     "children": [
       {
-        "id": "d93fe11b9c8de176",
+        "id": "d4c25b22f0c7d5f0",
         "type": "tabs",
+        "dimension": 36.340852130325814,
         "children": [
           {
-            "id": "8318c278dd2e9704",
+            "id": "ca4e910af4602420",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "340969ccd24905e8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "88-Template/home.md"
+              }
+            }
+          },
+          {
+            "id": "83061aceea29f566",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "88-Template/彩色时钟.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "0b3485207df574dd",
+        "type": "tabs",
+        "dimension": 63.65914786967418,
+        "children": [
+          {
+            "id": "041c78328387b373",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Record/88-Template/常用工具.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": true,
+                "file": "88-Template/home.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "byModifiedTime",
+                "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "321617495baa4255",
+            "id": "dc4a81bfd6624166",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Record/88-Template/常用工具.md",
+                "file": "88-Template/home.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "1617eeae7ebf9894",
+            "id": "b2ae90cb6049dbe9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,99 +187,89 @@
             }
           },
           {
-            "id": "7671b3b14de62c3b",
+            "id": "8851ccb0aa4e524a",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "outline",
+              "type": "markdown",
               "state": {
-                "file": "content/Record/88-Template/常用工具.md"
-              }
-            }
-          },
-          {
-            "id": "b1d0b5bbdd47b9e7",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
+                "file": "88-Template/常用工具.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 4
-      },
-      {
-        "id": "5308f3dceb8b8837",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b5f54640a06d8d87",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          }
-        ]
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 265
   },
   "left-ribbon": {
     "hiddenItems": {
       "canvas:新建白板": false,
+      "surfing:surfing-bookmark-manager": false,
+      "omnisearch:Omnisearch": false,
+      "homepage:Open homepage": false,
+      "periodic-notes:Open today's daily note": false,
+      "dbfolder:创建一个新数据库表": false,
+      "obsidian-projects:Open projects": false,
+      "templater-obsidian:Templater": false,
+      "cmdr:显示当前文件": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "remotely-save:Remotely Save": false,
+      "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
-      "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "136c7c222b09a916",
+  "active": "0ba92fb21fcd99fa",
   "lastOpenFiles": [
-    "content/Record/88-Template/常用工具react.md",
-    "content/Record/88-Template/打开文档的第一个外链接.md",
-    "content/Record/88-Template/从这开始.md",
-    "content/Record/88-Template/获取插件列表.md",
-    "content/Record/88-Template/示例库内置的插件列表.md",
-    "content/Record/88-Template/彩色时钟.md",
-    "content/Record/88-Template/88-Template.md",
-    "content/Record/88-Template/🎵Music.md",
-    "content/Record/88-Template/便签.md",
-    "content/Record/88-Template/EnablepluginList/View+.md",
-    "content/Record/88-Template/EnablepluginList/Table+.md",
-    "content/Record/88-Template/EnablepluginList/Required+.md",
-    "content/Record/88-Template/EnablepluginList/EnablepluginList.md",
-    "content/Record/88-Template/EnablepluginList/Edit+.md",
-    "content/Record/88-Template/ReactJS/DigitalClock.md",
-    "content/Record/88-Template/ReactJS/ColorfulClock.md",
-    "content/Record/88-Template/ReactJS/返回当前活动笔记的所有反向链接.md",
-    "content/Record/88-Template/常用工具.md",
-    "content/Record/88-Template/home.md",
-    "content/Record/88-Template/script/script.md",
-    "content/Record/Diary/Day/2023-02-25.md",
-    "content/Record/Diary/Day/2023-02-01.md",
-    "content/Record/88-Template/button.md",
-    "20-Diary/任务看板.md",
-    "20-Diary",
-    "content/Record/88-Template/chinese_stopwords.md",
-    "content/Record/88-Template/FastStart-GenerateListOfInstalledPlugins.md",
+    "content/Record/88-Template/script/template/template.md",
     "content/Record/88-Template/script/template/taskprogress.js",
     "content/Record/88-Template/script/template/getweather.js",
     "content/Record/88-Template/script/template/getTitleSnippet.js",
     "content/Record/88-Template/script/template/getrandomImage.js",
     "content/Record/88-Template/script/TasksTimeline/view.js",
     "content/Record/88-Template/script/TasksTimeline/view.css",
+    "content/Record/88-Template/script/TasksTimeline/README.md",
     "content/Record/88-Template/script/tasksCalendar/view.js",
     "content/Record/88-Template/script/tasksCalendar/view.css",
+    "content/Record/88-Template/script/tasksCalendar/README.md",
     "content/Record/88-Template/script/notesList/view.js",
-    "模板/Pasted image 20230215162902.png",
-    "模板/Pasted image 20230128180704.png",
-    "模板/Pasted image 20221211144611.png"
+    "content/Record/88-Template/script/notesList/view.css",
+    "content/Record/88-Template/script/notesList/README.md",
+    "content/Record/88-Template/tp/tp_foldermoc-Include-subfolders.md",
+    "content/Record/88-Template/tp/tp.md",
+    "content/Record/88-Template/tp/tp-默认笔记模板.md",
+    "content/Record/88-Template/tp/tp-通用模板.md",
+    "content/Record/88-Template/tp/tp-自动选择模板.md",
+    "content/Record/88-Template/tp/tp-笔记收集箱.md",
+    "content/Record/88-Template/tp/tp-笔记分类模板.md",
+    "content/Record/88-Template/tp/tp-流水账模板.md",
+    "content/Record/88-Template/tp/tp-日记模板-日历.md",
+    "content/Record/88-Template/tp/tp-日记模板-心情2.md",
+    "content/Record/88-Template/tp/tp-日记模板-心情.md",
+    "content/Record/88-Template/tp/tp-插件启停模板.md",
+    "content/Record/88-Template/tp/tp-人物模板.md",
+    "content/Record/88-Template/tp/tp-movie.md",
+    "content/Record/88-Template/tp/tp-movie-douban.md",
+    "content/Record/88-Template/tp/tp-book-callout.md",
+    "content/Record/88-Template/script/script.md",
+    "content/Record/88-Template/ReactJS/返回当前活动笔记的所有反向链接.md",
+    "content/Record/88-Template/ReactJS/slidegallery.md",
+    "content/Record/88-Template/ReactJS/react_weather.md",
+    "content/Record/88-Template/ReactJS/react_music.md",
+    "content/Record/88-Template/ReactJS/react_cat.md",
+    "60-Canvas/Home_middle.canvas",
+    "60-Canvas/canvas白板介绍_middle.canvas",
+    "60-Canvas/Assets/1505323928_home_.png"
   ]
 }

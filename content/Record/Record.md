@@ -5,7 +5,6 @@ obsidianUIMode: preview
 --- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
 %% Begin Waypoint %%
 - **[[Record]]**
-	- **[[88-Template]]**
 	- **[[模板]]**
 	- **[[Diary]]**
 	- **[[DigitalGarden]]**
