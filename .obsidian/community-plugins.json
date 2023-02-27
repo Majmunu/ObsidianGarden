@@ -5,5 +5,9 @@
   "obsidian-pandoc",
   "ob-table-enhancer",
   "remotely-save",
-  "obsidian-git"
+  "obsidian-git",
+  "buttons",
+  "dataview",
+  "obsidian-emoji-toolbar",
+  "editing-toolbar"
 ]
