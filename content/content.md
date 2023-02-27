@@ -10,6 +10,5 @@ obsidianUIMode: preview
 	- **[[private]]**
 	- **[[Record]]**
 	- **[[templates]]**
-	- [[test]]
 
 %% End Waypoint %%

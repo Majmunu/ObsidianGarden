@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "_index",
+      "path": "content/_index.md"
+    },
+    {
       "basename": "home",
       "path": "88-Template/home.md"
     },
@@ -89,10 +93,6 @@
       "path": "content/content.md"
     },
     {
-      "basename": "_index",
-      "path": "content/_index.md"
-    },
-    {
       "basename": "Day",
       "path": "content/Record/Diary/Day/Day.md"
     },
@@ -111,10 +111,6 @@
     {
       "basename": "catalogue",
       "path": "content/Record/DigitalGarden/catalogue.md"
-    },
-    {
-      "basename": "test",
-      "path": "content/test.md"
     },
     {
       "basename": "模板",

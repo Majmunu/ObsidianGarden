@@ -21,8 +21,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "8bd02e7eda3227f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/_index.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "88-Template/home.md"
+                "file": "content/_index.md"
               }
             }
           },
@@ -152,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "88-Template/home.md",
+                "file": "content/_index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -169,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "88-Template/home.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,10 +244,12 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "37c8f55a8ef7a09c",
+  "active": "8bd02e7eda3227f6",
   "lastOpenFiles": [
-    "20230227162713.md",
+    "content/test.md",
+    "content/_index.md",
     "88-Template/home.md",
+    "20230227162713.md",
     "88-Template/88-Template.md",
     "content/Record/88-Template/script/template/template.md",
     "content/Record/88-Template/script/template/taskprogress.js",
@@ -266,8 +282,6 @@
     "content/Record/88-Template/tp/tp-movie-douban.md",
     "content/Record/88-Template/tp/tp-book-callout.md",
     "content/Record/88-Template/script/script.md",
-    "content/Record/88-Template/ReactJS/返回当前活动笔记的所有反向链接.md",
-    "content/Record/88-Template/ReactJS/slidegallery.md",
     "60-Canvas/Home_middle.canvas",
     "60-Canvas/canvas白板介绍_middle.canvas",
     "60-Canvas/Assets/1505323928_home_.png"
