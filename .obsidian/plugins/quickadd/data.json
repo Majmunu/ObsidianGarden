@@ -6,7 +6,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "20-Diary/{{DATE:YYYY-MM-DD}}.md",
+      "captureTo": "content/",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": true,
@@ -40,7 +40,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "20-Diary/任务看板.md",
+      "captureTo": "content/任务看板.md",
       "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": true,

@@ -6,8 +6,10 @@ alt + shift + c 注释所有 console.log
 alt + shift + u 启用所有 console.log
 alt + shift + d 删除所有 console.log
 ```
+```
 
-```ad-note
+
+````ad-abstract
 title:自身快捷键
 -   重开一行：光标在行尾的话，回车即可；不在行尾，ctrl `+ enter` 向下重开一行；ctrl+`shift + enter` 则是在上一行重开一行
 -   删除一行：光标没有选择内容时，ctrl `+ x` 剪切一行；ctrl +`shift + k` 直接删除一行
@@ -48,4 +50,4 @@ Ctrl + Shift + ] 展开区域代码
 Ctrl + / 添加关闭行注释
 
 Shift + Alt +A 块区域注释
-```
+````

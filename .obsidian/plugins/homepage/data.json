@@ -3,7 +3,7 @@
   "defaultNote": "88-Template/home",
   "useMoment": false,
   "momentFormat": "YYYY-MM-DD",
-  "workspace": "Canvas",
+  "workspace": "Home",
   "workspaceEnabled": true,
   "hasRibbonIcon": true,
   "openMode": "Replace all open notes",
@@ -12,5 +12,6 @@
   "revertView": true,
   "refreshDataview": true,
   "autoCreate": false,
+  "autoScroll": false,
   "pin": false
 }
