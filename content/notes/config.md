@@ -31,7 +31,7 @@ enableCodeBlockTitle: true
 # whether to render copy buttons for code blocks
 enableCodeBlockCopy: true 
 
-# whether to render callouts
+# whether to render [[callouts]]
 enableCallouts: true
 
 # whether to try to process Latex

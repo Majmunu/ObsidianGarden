@@ -13,13 +13,98 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/Record/DigitalGarden/Antd/Antd.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87568b8a2d684108",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Record/DigitalGarden/Css/CSS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e9ce7c370fc9f463",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Record/DigitalGarden/JavaScript/Aarry.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a49f23821c99bba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Record/DigitalGarden/React/处理数据加载情况 无 错误 加载中.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "122af29a2d7792cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Record/DigitalGarden/Typescript/基础.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce16aa3a601878a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/notes/config.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "42646a83b0b13e24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/_index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c3614a87e9805bf8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "content/_index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -48,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Redux如何工",
+                "query": "date",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +189,7 @@
               "state": {
                 "file": "content/_index.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -138,7 +223,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "5308f3dceb8b8837",
@@ -167,20 +252,41 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "periodic-notes:Open today": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "remotely-save:Remotely Save": false
+      "remotely-save:Remotely Save": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "e00a5329f2606c08",
+  "active": "42646a83b0b13e24",
   "lastOpenFiles": [
-    "content/工作笔记/个人仓库/杂技.md",
-    "content/工作笔记/个人仓库/MarkDown语法 超详细教程.md",
+    "content/notes/config.md",
+    "content/notes/troubleshooting.md",
     "content/_index.md",
-    "content/工作笔记/个人仓库/个人仓库目录.md",
-    "content/工作笔记/个人仓库/配置环境.md",
-    "content/工作笔记/个人仓库/Antd/antd轮播图带箭头样式.md",
-    "content/工作笔记/个人仓库/Antd/Antd目录.md",
+    "content/test.md",
+    "content/Record/DigitalGarden/catalogue.md",
+    "content/Record/DigitalGarden/React/处理数据加载情况 无 错误 加载中.md",
+    "content/Record/DigitalGarden/Typescript/TYPESCRIPT.md",
+    "content/Record/DigitalGarden/Typescript/基础.md",
+    "content/Record/DigitalGarden/配置环境.md",
+    "content/Record/DigitalGarden/React/REACT.md",
+    "content/Record/DigitalGarden/NextJs/NextJs.md",
+    "content/Record/DigitalGarden/JavaScript/JAVASCRIPT.md",
+    "content/Record/DigitalGarden/JavaScript/Aarry.md",
+    "content/Record/DigitalGarden/git/GIT.md",
+    "content/Record/DigitalGarden/Antd/Antd.md",
+    "content/Record/DigitalGarden/Css/CSS.md",
+    "content/Record/DigitalGarden/Css/Grid 布局.md",
+    "content/Record/DigitalGarden/Antd/antd-popover样式更改，及参数详解.md",
+    "content/Record/DigitalGarden/Antd/antd轮播图带箭头样式.md",
+    "content/notes/setup.md",
+    "content/notes/philosophy.md",
+    "content/notes/ignore notes.md",
+    "content/notes/CJK + Latex Support (测试).md",
+    "工作笔记/个人仓库/Antd/Antd目录.md",
+    "工作笔记/个人仓库/Antd",
+    "工作笔记/个人仓库",
+    "工作笔记",
+    "content/private/private-note.md",
+    "content/notes/obsidian.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
     "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
@@ -188,30 +294,8 @@
     "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
     "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
     "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
-    "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
-    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
-    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
-    "个人仓库/git/git相关.md",
-    "个人仓库/git/GitHub Copilot 键盘快捷键.md",
-    "个人仓库/git/Github学生开发包.md",
-    "个人仓库/Typescript/基础.md",
-    "个人仓库/React/http自定义钩子.md",
-    "每日笔记/日/2023-02-25.md",
-    "个人仓库/React/ReduxTool.md",
-    "个人仓库/React/Ref扩展.md",
-    "个人仓库/React/React扩展.md",
-    "个人仓库/NextJs/NextJs.md",
-    "个人仓库/配置环境.md",
-    "个人仓库/杂技.md",
-    "个人仓库/MarkDown语法 超详细教程.md",
-    "模板/公司账号密码.md",
     "模板/Pasted image 20230215162902.png",
     "模板/Pasted image 20230128180704.png",
-    "模板/Pasted image 20221211144611.png",
-    "模板/未命名.md",
-    "个人仓库/Css/Grid 布局.md",
-    "个人仓库/JavaScript/数组/Array.prototype.includes().md",
-    "每日笔记/日/2023-02-18.md",
-    "个人仓库/Vscode快捷键.md"
+    "模板/Pasted image 20221211144611.png"
   ]
 }

@@ -25,6 +25,24 @@ enableToc: false
 ## 探索列表
 > 📚 Step 1: [Setup your own digital garden using Quartz](notes/setup.md)
 
-添加中。。。
+
+> [[Record/DigitalGarden/catalogue]]
+
+> [[Record/DigitalGarden/Antd/Antd]]
+
+> [[Record/DigitalGarden/Css/CSS]]
+
+> [[Record/DigitalGarden/git/GIT]]
+
+> [[Record/DigitalGarden/JavaScript/JAVASCRIPT]]
+
+> [[Record/DigitalGarden/NextJs/NextJs]]
+
+> [[Record/DigitalGarden/React/REACT]]
+
+> [[Record/DigitalGarden/Typescript/TYPESCRIPT]]
+
+[[test]]
+
 
 
