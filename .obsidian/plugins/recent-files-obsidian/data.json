@@ -5,6 +5,14 @@
       "path": "88-Template/home.md"
     },
     {
+      "basename": "20230227162713",
+      "path": "20230227162713.md"
+    },
+    {
+      "basename": "88-Template",
+      "path": "88-Template/88-Template.md"
+    },
+    {
       "basename": "FastStart-StartupScript",
       "path": "88-Template/FastStart-StartupScript.md"
     },
@@ -67,10 +75,6 @@
     {
       "basename": "EnablepluginList",
       "path": "88-Template/EnablepluginList/EnablepluginList.md"
-    },
-    {
-      "basename": "88-Template",
-      "path": "88-Template/88-Template.md"
     },
     {
       "basename": "便签",
