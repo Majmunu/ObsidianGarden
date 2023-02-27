@@ -1,8 +1,11 @@
 ---
-title: "JAVASCRIPT"
----
-[[Aarry]]
-[[数组/Array.prototype.at()]]
-[[数组/Array.prototype.reduce()]]
-[[数组/Array.prototype.includes()]]
-[[数组/String.prototype.trim()]]
+cssclass: kanban gridlist noyaml
+tag: moc
+obsidianUIMode: preview
+--- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
+%% Begin Waypoint %%
+- **[[JavaScript]]**
+	- **[[数组]]**
+	- [[Aarry]]
+
+%% End Waypoint %%

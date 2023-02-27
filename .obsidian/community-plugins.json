@@ -9,5 +9,11 @@
   "buttons",
   "dataview",
   "obsidian-emoji-toolbar",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-echarts",
+  "obsidian-style-settings",
+  "obsidian-banners",
+  "quickadd",
+  "templater-obsidian",
+  "workspaces-plus"
 ]

@@ -1,5 +1,9 @@
 ---
-title: "NextJs"
----
-## 路由
- > 基于文件的路由系统 Next路由跳转采用 `Link` 来标记
+cssclass: kanban gridlist noyaml
+tag: moc
+obsidianUIMode: preview
+--- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
+%% Begin Waypoint %%
+- **[[NextJs]]**
+
+%% End Waypoint %%

@@ -4,107 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7976a888504a06aa",
+        "id": "fc1647d4c604e719",
         "type": "tabs",
         "children": [
           {
-            "id": "e00a5329f2606c08",
+            "id": "5a2564ce424c07cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Record/DigitalGarden/Antd/Antd.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87568b8a2d684108",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Record/DigitalGarden/Css/CSS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9ce7c370fc9f463",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Record/DigitalGarden/JavaScript/Aarry.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a49f23821c99bba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Record/DigitalGarden/React/处理数据加载情况 无 错误 加载中.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "122af29a2d7792cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Record/DigitalGarden/Typescript/基础.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce16aa3a601878a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/notes/config.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "42646a83b0b13e24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/notes/callouts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c3614a87e9805bf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/_index.md",
-                "mode": "source",
+                "file": "content/styles/home.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/callouts.md",
+                "file": "content/styles/home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/callouts.md",
+                "file": "content/styles/home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -210,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/callouts.md"
+                "file": "content/styles/home.md"
               }
             }
           },
@@ -223,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "5308f3dceb8b8837",
@@ -253,47 +168,51 @@
       "command-palette:打开命令面板": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
       "remotely-save:Remotely Save": false,
-      "periodic-notes:Open today": false
+      "periodic-notes:Open today": false,
+      "workspaces:管理工作区布局": false,
+      "templater-obsidian:Templater": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "42646a83b0b13e24",
+  "active": "d762abc4c21cd94b",
   "lastOpenFiles": [
-    "content/notes/config.md",
-    "content/notes/docker.md",
-    "content/notes/search.md",
-    "content/notes/setup.md",
-    "content/notes/showcase.md",
-    "content/notes/troubleshooting.md",
-    "content/notes/preview changes.md",
-    "content/notes/philosophy.md",
-    "content/notes/obsidian.md",
-    "content/notes/ignore notes.md",
-    "content/notes/hosting.md",
-    "content/notes/editing.md",
-    "content/notes/custom Domain.md",
-    "content/notes/CJK + Latex Support (测试).md",
-    "content/notes/callouts.md",
-    "content/_index.md",
-    "content/test.md",
-    "content/Record/DigitalGarden/catalogue.md",
-    "content/Record/DigitalGarden/React/处理数据加载情况 无 错误 加载中.md",
-    "content/Record/DigitalGarden/Typescript/TYPESCRIPT.md",
-    "content/Record/DigitalGarden/Typescript/基础.md",
-    "content/Record/DigitalGarden/配置环境.md",
-    "content/Record/DigitalGarden/React/REACT.md",
+    "content/styles/88-Template.md",
+    "content/styles/🎵Music.md",
+    "content/styles/便签.md",
+    "content/styles/彩色时钟.md",
+    "content/styles/styles.md",
+    "content/content.md",
+    "content/notes/notes.md",
+    "content/private/private.md",
+    "content/Record/Record.md",
+    "content/templates/templates.md",
+    "content/notes/images/images.md",
+    "content/Record/Diary/Diary.md",
+    "content/Record/DigitalGarden/DigitalGarden.md",
+    "content/Record/ProjectNotes/ProjectNotes.md",
+    "content/Record/模板/模板.md",
+    "content/Record/Diary/Day/Day.md",
+    "content/Record/Diary/Week/Week.md",
+    "content/Record/DigitalGarden/Antd/Antd.md",
+    "content/Record/DigitalGarden/Css/Css.md",
+    "content/Record/DigitalGarden/git/git.md",
+    "content/Record/DigitalGarden/JavaScript/JavaScript.md",
     "content/Record/DigitalGarden/NextJs/NextJs.md",
-    "content/Record/DigitalGarden/JavaScript/JAVASCRIPT.md",
-    "content/Record/DigitalGarden/JavaScript/Aarry.md",
-    "工作笔记/个人仓库/Antd",
-    "工作笔记/个人仓库",
-    "工作笔记",
-    "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
-    "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
-    "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
-    "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
-    "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
-    "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
-    "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "content/Record/DigitalGarden/React/React.md",
+    "content/Record/DigitalGarden/Typescript/Typescript.md",
+    "content/Record/DigitalGarden/JavaScript/数组/数组.md",
+    "content/styles/EnablepluginList/EnablepluginList.md",
+    "content/styles/script/template/taskprogress.js",
+    "content/styles/script/template/getweather.js",
+    "content/styles/script/template/getTitleSnippet.js",
+    "content/styles/script/template/getrandomImage.js",
+    "content/styles/script/TasksTimeline/view.js",
+    "content/styles/script/TasksTimeline/view.css",
+    "content/styles/script/tasksCalendar/view.js",
+    "content/styles/script/tasksCalendar/view.css",
+    "content/styles/script/notesList/view.js",
+    "content/styles/script/notesList/view.css",
     "模板/Pasted image 20230215162902.png",
     "模板/Pasted image 20230128180704.png",
     "模板/Pasted image 20221211144611.png"

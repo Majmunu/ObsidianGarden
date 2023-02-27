@@ -1,5 +1,10 @@
 ---
-title: "CSS"
----
+cssclass: kanban gridlist noyaml
+tag: moc
+obsidianUIMode: preview
+--- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
+%% Begin Waypoint %%
+- **[[Css]]**
+	- [[Grid 布局]]
 
-> [[content/Record/DigitalGarden/Css/Grid 布局]]
+%% End Waypoint %%

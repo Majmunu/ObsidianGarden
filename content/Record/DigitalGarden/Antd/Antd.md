@@ -1,6 +1,11 @@
 ---
-title: "Antd"
----
-> [[antd轮播图带箭头样式]]
+cssclass: kanban gridlist noyaml
+tag: moc
+obsidianUIMode: preview
+--- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
+%% Begin Waypoint %%
+- **[[Antd]]**
+	- [[antd-popover样式更改，及参数详解]]
+	- [[antd轮播图带箭头样式]]
 
-> [[antd-popover样式更改，及参数详解]]
+%% End Waypoint %%
