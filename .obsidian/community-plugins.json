@@ -4,5 +4,6 @@
   "obsidian-admonition",
   "obsidian-pandoc",
   "ob-table-enhancer",
-  "remotely-save"
+  "remotely-save",
+  "obsidian-git"
 ]
