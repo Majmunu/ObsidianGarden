@@ -9,16 +9,17 @@ obsidianUIMode: preview
 - **[[DigitalGarden]]**
 	- [[配置环境]]
 	- [[杂技]]
-	- **[[Antd/Antd]]**
+	- **[[Antd]]**
 	- [[catalogue]]
-	- **[[Css/Css]]**
-	- **[[git/git]]**
-	- **[[JavaScript/JavaScript]]**
+	- **[[Css]]**
+	- **[[git]]**
+	- **[[JavaScript]]**
 	- [[MarkDown语法 超详细教程]]
-	- **[[NextJs/NextJs]]**
-	- **Node**
-	- **[[React/React]]**
-	- **[[Typescript/Typescript]]**
+	- **[[NextJs]]**
+	- **[[Node]]**
+		- [[Introduction to Node.js]]
+	- **[[React]]**
+	- **[[Typescript]]**
 	- [[Vscode快捷键]]
 
 %% End Waypoint %%

@@ -6,9 +6,12 @@ tags:
 created: <% tp.date.now("YYYY-MM-DD") %>
 Update: <%+ tp.file.last_modified_date("YYYY-MM-DD dddd HH:mm:ss") %>
 ---
-#  <font color="#92d050">类型类别  </font>
+#  <font color="#92d050">TypeScript Fundamentals</font>
+
 ---
-## <font color="#ffc000">可选类型</font>
+## <font color="#7030a0">对象，数值和元组</font>
+> 现在我们知道了如何键入简单的变量和函数，让我们做一些事情 集合更有趣一点：在 JavaScript 中，这包括对象和数组。
+### <font color="#ffc000">可选类型</font>
 > 我们可以使用以下运算符声明此属性是可选的：`?`
 
 ```js
@@ -75,7 +78,7 @@ chargeVoltage: 220,
 ```
 
 ---
-##  <font color="#00b050">索引签名和对象问答</font>
+###  <font color="#00b050">索引签名和对象问答</font>
 
 有时我们需要表示**字典**的类型，其中一致类型的值可通过键检索
 让我们考虑以下电话号码集合：
@@ -120,7 +123,7 @@ const phones: {
 console.log(phones.fax.area)
 ```
 ---
-## <font color="#dbeef3">数组和元组</font>
+###  <font color="#dbeef3">数组和元组</font>
 > 🐱‍🏍简单类型数组
 ```js
 const fileExtensions = ["js", "ts"]
@@ -160,4 +163,12 @@ numPair.pop() // [4, 5]
 numPair.pop() // [4]
 
 numPair.pop() // []
+
+现在支持只读：
+
+const numPair: readonly [number, number] = [4, 5]
 ```
+---
+##  [<font color="#205867">结构类型与标称类型</font>](https://www.typescript-training.com/course/fundamentals-v3/05-structural-vs-nominal-types/)
+
+
