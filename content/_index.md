@@ -24,8 +24,6 @@ enableToc: false
 
 ## 探索列表
 
-> 🍇 [[Record/DigitalGarden/catalogue]]
-
 >🍈 [[Record/DigitalGarden/Antd/Antd]]
 
 >🍊 [[Record/DigitalGarden/Css/CSS]]

@@ -1,6 +1,7 @@
 ---
 cssclass: kanban gridlist noyaml
 tag: moc
+title: Day
 obsidianUIMode: preview
 --- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
 %% Begin Waypoint %%
@@ -26,5 +27,6 @@ obsidianUIMode: preview
 	- [[2023-02-14]]
 	- [[2023-02-18]]
 	- [[2023-02-25]]
+	- [[2023-02-28]]
 
 %% End Waypoint %%

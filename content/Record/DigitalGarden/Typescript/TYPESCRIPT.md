@@ -1,10 +1,12 @@
 ---
 cssclass: kanban gridlist noyaml
+title: TypeScript
 tag: moc
+tags: 目录
 obsidianUIMode: preview
 --- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
 %% Begin Waypoint %%
 - **[[Typescript]]**
-	- [[基础]]
+	- [[TypeScript Fundamentals]]
 
 %% End Waypoint %%
