@@ -1,5 +1,5 @@
 ---
-UID: <% tp.date.now("YYYYMMDDHHmm")%> 
+UID: 202302281119 
 alias: 
 cssclass: mynote,noyaml
 ---

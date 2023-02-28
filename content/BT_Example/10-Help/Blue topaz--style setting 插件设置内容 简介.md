@@ -1,4 +1,4 @@
-﻿---
+---
 
 mindmap-plugin: basic
 
