@@ -23,20 +23,19 @@
             }
           },
           {
-            "id": "1a16f03c62af2404",
+            "id": "019ce2a1074c149b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/informalessay/2023-02-27.md",
-                "mode": "preview",
+                "file": "88-Template/tp/tp-通用模板.md",
+                "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +118,7 @@
       {
         "id": "d4c25b22f0c7d5f0",
         "type": "tabs",
-        "dimension": 36.340852130325814,
+        "dimension": 36.34085213032582,
         "children": [
           {
             "id": "ca4e910af4602420",
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/informalessay/2023-02-27.md"
+                "file": "88-Template/home.md"
               }
             }
           },
@@ -158,7 +157,7 @@
       {
         "id": "0b3485207df574dd",
         "type": "tabs",
-        "dimension": 63.65914786967418,
+        "dimension": 31.829573934837093,
         "children": [
           {
             "id": "041c78328387b373",
@@ -166,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/informalessay/2023-02-27.md",
+                "file": "88-Template/home.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -183,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/informalessay/2023-02-27.md",
+                "file": "88-Template/home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,6 +216,21 @@
           }
         ],
         "currentTab": 3
+      },
+      {
+        "id": "f3f97d7d0625cea7",
+        "type": "tabs",
+        "dimension": 31.829573934837093,
+        "children": [
+          {
+            "id": "1a16f03c62af2404",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -246,42 +260,42 @@
   },
   "active": "37c8f55a8ef7a09c",
   "lastOpenFiles": [
+    "88-Template/tp/tp-通用模板.md",
+    "88-Template/tp/tp-日记模板-日历.md",
+    "88-Template/tp/tp-笔记分类模板.md",
+    "88-Template/tp/tp.md",
+    "88-Template/88-Template.md",
+    "content/templates/post.md",
+    "content/templates/templates.md",
+    "content/informalessay/2023-02-27.md",
+    "88-Template/home.md",
+    "content/任务看板.md",
+    "content/Record/DigitalGarden/DigitalGarden.md",
+    "content/informalessay/carbon 代码高亮分享.md",
+    "50-Inbox/Work",
+    "50-Inbox/Website",
+    "50-Inbox",
+    "88-Template/00-Tips.md",
+    "20-Diary/2023-02-27.md",
+    "88-Template/常用工具.md",
+    "content/_index.md",
+    "content/Record/DigitalGarden/React/React.md",
+    "content/Record/Diary/Diary.md",
+    "content/Record/模板/模板.md",
+    "content/Record/模板/公司账号密码.md",
+    "2022-06-26.md",
+    "content/Record/Record.md",
+    "content/notes/notes.md",
     "content/notes/CJK + Latex Support (测试).md",
     "content/notes/images/images.md",
-    "content/notes/notes.md",
-    "content/informalessay/2023-02-27.md",
-    "88-Template/常用工具.md",
-    "content/informalessay/2023-02-27.md",
-    "content/任务看板.md",
     "20-Diary/任务看板.md",
-    "content/content.md",
     "content/informalessay",
-    "88-Template/88-Template.md",
-    "88-Template/常用工具react.md",
     "20-Diary",
-    "content/Record/DigitalGarden/Vscode快捷键.md",
-    "content/Record/DigitalGarden/DigitalGarden.md",
-    "88-Template/彩色时钟.md",
-    "88-Template/便签.md",
-    "88-Template/🎵Music.md",
-    "88-Template/tp/tp.md",
-    "88-Template/ReactJS/ColorfulClock.md",
-    "88-Template/script/script.md",
-    "88-Template/script/template/template.md",
-    "88-Template/script/TasksTimeline/README.md",
-    "88-Template/script/tasksCalendar/README.md",
-    "88-Template/script/notesList/README.md",
-    "88-Template/ReactJS/slidegallery.md",
-    "88-Template/ReactJS/ReactJS.md",
-    "88-Template/ReactJS/react_cat.md",
     "content/Record/88-Template/script/template/taskprogress.js",
     "content/Record/88-Template/script/template/getweather.js",
     "content/Record/88-Template/script/template/getTitleSnippet.js",
     "content/Record/88-Template/script/template/getrandomImage.js",
     "content/Record/88-Template/script/TasksTimeline/view.js",
-    "content/Record/88-Template/script/TasksTimeline/view.css",
-    "content/Record/88-Template/script/tasksCalendar/view.js",
-    "content/Record/88-Template/script/tasksCalendar/view.css",
     "60-Canvas/Home_middle.canvas",
     "60-Canvas/canvas白板介绍_middle.canvas",
     "60-Canvas/Assets/1505323928_home_.png"

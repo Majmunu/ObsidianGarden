@@ -9,6 +9,7 @@ obsidianUIMode: preview
 	- [[任务看板]]
 	- **informalessay**
 		- [[2023-02-27]]
+		- [[carbon 代码高亮分享]]
 	- **[[notes]]**
 	- **[[private]]**
 	- **[[Record]]**

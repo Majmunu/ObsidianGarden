@@ -1,8 +1,92 @@
 {
   "recentFiles": [
     {
+      "basename": "home",
+      "path": "88-Template/home.md"
+    },
+    {
+      "basename": "tp-通用模板",
+      "path": "88-Template/tp/tp-通用模板.md"
+    },
+    {
+      "basename": "tp-日记模板-日历",
+      "path": "88-Template/tp/tp-日记模板-日历.md"
+    },
+    {
+      "basename": "tp-笔记分类模板",
+      "path": "88-Template/tp/tp-笔记分类模板.md"
+    },
+    {
+      "basename": "tp",
+      "path": "88-Template/tp/tp.md"
+    },
+    {
+      "basename": "88-Template",
+      "path": "88-Template/88-Template.md"
+    },
+    {
+      "basename": "post",
+      "path": "content/templates/post.md"
+    },
+    {
+      "basename": "templates",
+      "path": "content/templates/templates.md"
+    },
+    {
       "basename": "2023-02-27",
       "path": "content/informalessay/2023-02-27.md"
+    },
+    {
+      "basename": "任务看板",
+      "path": "content/任务看板.md"
+    },
+    {
+      "basename": "DigitalGarden",
+      "path": "content/Record/DigitalGarden/DigitalGarden.md"
+    },
+    {
+      "basename": "carbon 代码高亮分享",
+      "path": "content/informalessay/carbon 代码高亮分享.md"
+    },
+    {
+      "basename": "00-Tips",
+      "path": "88-Template/00-Tips.md"
+    },
+    {
+      "basename": "2023-02-27",
+      "path": "20-Diary/2023-02-27.md"
+    },
+    {
+      "basename": "常用工具",
+      "path": "88-Template/常用工具.md"
+    },
+    {
+      "basename": "_index",
+      "path": "content/_index.md"
+    },
+    {
+      "basename": "React",
+      "path": "content/Record/DigitalGarden/React/React.md"
+    },
+    {
+      "basename": "Diary",
+      "path": "content/Record/Diary/Diary.md"
+    },
+    {
+      "basename": "模板",
+      "path": "content/Record/模板/模板.md"
+    },
+    {
+      "basename": "公司账号密码",
+      "path": "content/Record/模板/公司账号密码.md"
+    },
+    {
+      "basename": "Record",
+      "path": "content/Record/Record.md"
+    },
+    {
+      "basename": "notes",
+      "path": "content/notes/notes.md"
     },
     {
       "basename": "CJK + Latex Support (测试)",
@@ -13,18 +97,6 @@
       "path": "content/notes/images/images.md"
     },
     {
-      "basename": "notes",
-      "path": "content/notes/notes.md"
-    },
-    {
-      "basename": "常用工具",
-      "path": "88-Template/常用工具.md"
-    },
-    {
-      "basename": "任务看板",
-      "path": "content/任务看板.md"
-    },
-    {
       "basename": "任务看板",
       "path": "20-Diary/任务看板.md"
     },
@@ -33,20 +105,12 @@
       "path": "content/content.md"
     },
     {
-      "basename": "88-Template",
-      "path": "88-Template/88-Template.md"
-    },
-    {
       "basename": "常用工具react",
       "path": "88-Template/常用工具react.md"
     },
     {
       "basename": "Vscode快捷键",
       "path": "content/Record/DigitalGarden/Vscode快捷键.md"
-    },
-    {
-      "basename": "DigitalGarden",
-      "path": "content/Record/DigitalGarden/DigitalGarden.md"
     },
     {
       "basename": "彩色时钟",
@@ -59,10 +123,6 @@
     {
       "basename": "🎵Music",
       "path": "88-Template/🎵Music.md"
-    },
-    {
-      "basename": "tp",
-      "path": "88-Template/tp/tp.md"
     },
     {
       "basename": "ColorfulClock",
@@ -139,66 +199,6 @@
     {
       "basename": "EnablepluginList",
       "path": "88-Template/EnablepluginList/EnablepluginList.md"
-    },
-    {
-      "basename": "Edit+",
-      "path": "88-Template/EnablepluginList/Edit+.md"
-    },
-    {
-      "basename": "home",
-      "path": "88-Template/home.md"
-    },
-    {
-      "basename": "_index",
-      "path": "content/_index.md"
-    },
-    {
-      "basename": "20230227162713",
-      "path": "20230227162713.md"
-    },
-    {
-      "basename": "FastStart-StartupScript",
-      "path": "88-Template/FastStart-StartupScript.md"
-    },
-    {
-      "basename": "FastStart-Plugins-simple",
-      "path": "88-Template/FastStart-Plugins-simple.md"
-    },
-    {
-      "basename": "FastStart-Plugins-ShortDelay",
-      "path": "88-Template/FastStart-Plugins-ShortDelay.md"
-    },
-    {
-      "basename": "FastStart-Plugins-LongDelay",
-      "path": "88-Template/FastStart-Plugins-LongDelay.md"
-    },
-    {
-      "basename": "FastStart-GenerateListOfInstalledPlugins",
-      "path": "88-Template/FastStart-GenerateListOfInstalledPlugins.md"
-    },
-    {
-      "basename": "chinese_stopwords",
-      "path": "88-Template/chinese_stopwords.md"
-    },
-    {
-      "basename": "Calendar2021-2022",
-      "path": "88-Template/Calendar2021-2022.md"
-    },
-    {
-      "basename": "button",
-      "path": "88-Template/button.md"
-    },
-    {
-      "basename": "示例库内置的插件列表",
-      "path": "88-Template/示例库内置的插件列表.md"
-    },
-    {
-      "basename": "日记统计",
-      "path": "88-Template/日记统计.md"
-    },
-    {
-      "basename": "获取插件列表",
-      "path": "88-Template/获取插件列表.md"
     }
   ],
   "omittedPaths": [],
