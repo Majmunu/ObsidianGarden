@@ -40,6 +40,8 @@ enableToc: false
 
 >🍓 [[Record/DigitalGarden/Node/Node]]
 
+> 🥥[[Record/DigitalGarden/Nebulas/Nebulas]] 
+
 
 
 

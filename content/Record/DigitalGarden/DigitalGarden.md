@@ -15,9 +15,9 @@ obsidianUIMode: preview
 	- **[[git]]**
 	- **[[JavaScript]]**
 	- [[MarkDown语法 超详细教程]]
+	- **Nebulas**
 	- **[[NextJs]]**
 	- **[[Node]]**
-		- [[Introduction to Node.js]]
 	- **[[React]]**
 	- **[[Typescript]]**
 	- [[Vscode快捷键]]

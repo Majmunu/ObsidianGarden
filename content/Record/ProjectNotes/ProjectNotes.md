@@ -9,5 +9,6 @@ obsidianUIMode: preview
 - **[[ProjectNotes]]**
 	- [[任务中心发布与预览]]
 	- [[项目任务发布管理]]
+	- [[项目任务发布静态页面]]
 
 %% End Waypoint %%
