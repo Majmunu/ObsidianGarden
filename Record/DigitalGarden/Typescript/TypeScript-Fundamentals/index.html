@@ -1,8 +1,8 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="TypeScript Fundamentals  对象，数值和元组  现在我们知道了如何键入简单的变量和函数，让我们做一些事情 集合更有趣一点：在 JavaScript 中，这包括对象和数组。
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="TypeScript Fundamentals  对象，数值和元组  现在我们知道了如何键入简单的变量和函数，让我们做一些事情集合更有趣一点：在 JavaScript 中，这包括对象和数组。
  可选类型  我们可以使用以下运算符声明此属性是可选的：?
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  function printCar(car: { make: string model: string year: number chargeVoltage?"><meta property="og:title" content="TypeScript Fundamentals"><meta property="og:description" content="TypeScript Fundamentals  对象，数值和元组  现在我们知道了如何键入简单的变量和函数，让我们做一些事情 集合更有趣一点：在 JavaScript 中，这包括对象和数组。
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  function printCar(car: { make: string model: string year: number chargeVoltage?"><meta property="og:title" content="TypeScript Fundamentals"><meta property="og:description" content="TypeScript Fundamentals  对象，数值和元组  现在我们知道了如何键入简单的变量和函数，让我们做一些事情集合更有趣一点：在 JavaScript 中，这包括对象和数组。
  可选类型  我们可以使用以下运算符声明此属性是可选的：?
- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  function printCar(car: { make: string model: string year: number chargeVoltage?"><meta property="og:type" content="website"><meta property="og:image" content="https://wangc.tech/icon.png"><meta property="og:url" content="https://wangc.tech/Record/DigitalGarden/Typescript/TypeScript-Fundamentals/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="TypeScript Fundamentals"><meta name=twitter:description content="TypeScript Fundamentals  对象，数值和元组  现在我们知道了如何键入简单的变量和函数，让我们做一些事情 集合更有趣一点：在 JavaScript 中，这包括对象和数组。
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  function printCar(car: { make: string model: string year: number chargeVoltage?"><meta property="og:type" content="website"><meta property="og:image" content="https://wangc.tech/icon.png"><meta property="og:url" content="https://wangc.tech/Record/DigitalGarden/Typescript/TypeScript-Fundamentals/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="TypeScript Fundamentals"><meta name=twitter:description content="TypeScript Fundamentals  对象，数值和元组  现在我们知道了如何键入简单的变量和函数，让我们做一些事情集合更有趣一点：在 JavaScript 中，这包括对象和数组。
  可选类型  我们可以使用以下运算符声明此属性是可选的：?
  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  function printCar(car: { make: string model: string year: number chargeVoltage?"><meta name=twitter:image content="https://wangc.tech/icon.png"><meta name=twitter:site content="_jzhao"><title>TypeScript Fundamentals</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://wangc.tech//icon.png><link href=https://wangc.tech/styles.362273a65364f147a94baaafca5f0014.min.css rel=stylesheet><link href=https://wangc.tech/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://wangc.tech/js/darkmode.14d82bd842461a6ec5a7f0a0e8be27dc.min.js></script>
 <script src=https://wangc.tech/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
@@ -15,15 +15,15 @@
 <script defer src=https://wangc.tech/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
 <script defer src=https://wangc.tech/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
 <script defer src=https://wangc.tech/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
-<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://wangc.tech/",fetchData=Promise.all([fetch("https://wangc.tech/indices/linkIndex.5f4365d1c68aabbad02a40b4eefa4acc.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://wangc.tech/indices/contentIndex.125dd833aef8dd60ae17fa621c5f4092.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://wangc.tech",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://wangc.tech",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://wangc.tech/",fetchData=Promise.all([fetch("https://wangc.tech/indices/linkIndex.408cbce0ac4f4fdbc762e4a4907c7412.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://wangc.tech/indices/contentIndex.0032b4c472bef3d0e9d0c7c68a411daf.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://wangc.tech",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://wangc.tech",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
     import { attachSPARouting } from "https:\/\/wangc.tech\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
     attachSPARouting(init, render)
   </script><script defer data-domain=wangc.tech src=https://plausible.io/js/script.js></script>
 <script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
 <script defer src=https://wangc.tech/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://wangc.tech/>🪴 Wangc.TECH</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
 <label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>TypeScript Fundamentals</h1><p class=meta>Last updated
-Feb 28, 2023
-<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/Record/DigitalGarden/Typescript/TypeScript%20Fundamentals.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://wangc.tech/tags/TypeScript/>Type script</a></li><li><a href=https://wangc.tech/tags/%E5%9F%BA%E7%A1%80/>基础</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#font-color7030a0对象数值和元组font><font color=#7030a0>对象，数值和元组</font></a><ol><li><a href=#font-colorffc000可选类型font><font color=#ffc000>可选类型</font></a></li><li><a href=#font-color00b050索引签名和对象问答font><font color=#00b050>索引签名和对象问答</font></a></li><li><a href=#font-colordbeef3数组和元组font><font color=#dbeef3>数组和元组</font></a></li></ol></li><li><a href=#font-color205867结构类型与标称类型fonthttpswwwtypescript-trainingcomcoursefundamentals-v305-structural-vs-nominal-types><a href=https://www.typescript-training.com/course/fundamentals-v3/05-structural-vs-nominal-types/><font color=#205867>结构类型与标称类型</font></a></a></li></ol></nav></details></aside><a href=#font-color92d050typescript-fundamentalsfont><h1 id=font-color92d050typescript-fundamentalsfont><span class=hanchor arialabel=Anchor># </span><font color=#92d050>TypeScript Fundamentals</font></h1></a><hr><a href=#font-color7030a0对象数值和元组font><h2 id=font-color7030a0对象数值和元组font><span class=hanchor arialabel=Anchor># </span><font color=#7030a0>对象，数值和元组</font></h2></a><blockquote><p>现在我们知道了如何键入简单的变量和函数，让我们做一些事情 集合更有趣一点：在 JavaScript 中，这包括对象和数组。</p></blockquote><a href=#font-colorffc000可选类型font><h3 id=font-colorffc000可选类型font><span class=hanchor arialabel=Anchor># </span><font color=#ffc000>可选类型</font></h3></a><blockquote><p>我们可以使用以下运算符声明此属性是可选的：<code>?</code></p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+Mar 1, 2023
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/Record/DigitalGarden/Typescript/TypeScript%20Fundamentals.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://wangc.tech/tags/TypeScript/>Type script</a></li><li><a href=https://wangc.tech/tags/%E5%9F%BA%E7%A1%80/>基础</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#font-color7030a0对象数值和元组font><font color=#7030a0>对象，数值和元组</font></a><ol><li><a href=#font-colorffc000可选类型font><font color=#ffc000>可选类型</font></a></li><li><a href=#font-color00b050索引签名和对象问答font><font color=#00b050>索引签名和对象问答</font></a></li><li><a href=#font-colordbeef3数组和元组font><font color=#dbeef3>数组和元组</font></a></li></ol></li><li><a href=#font-color205867结构类型与标称类型fonthttpswwwtypescript-trainingcomcoursefundamentals-v305-structural-vs-nominal-types><a href=https://www.typescript-training.com/course/fundamentals-v3/05-structural-vs-nominal-types/><font color=#205867>结构类型与标称类型</font></a></a><ol><li><a href=#什么是类型检查>什么是类型检查？</a></li><li><a href=#font-colorb2a2c7标称与结构font><font color=#b2a2c7>标称与结构</font></a></li><li><a href=#font-color548dd4鸭子打字font><font color=#548dd4>鸭子打字</font></a></li><li><a href=#font-color548dd4强与弱类型font>“<font color=#548dd4>强”与“弱”类型</font></a></li></ol></li><li><a href=#font-colord99694并集和交集类型font><font color=#d99694>并集和交集类型</font></a><ol><li><a href=#并集和交集类型概念上>并集和交集类型，概念上</a></li><li><a href=#typescript-中的联合类型>TypeScript 中的联合类型</a></li><li><a href=#使用联合类型>使用联合类型</a></li></ol></li></ol></nav></details></aside><a href=#font-color92d050typescript-fundamentalsfont><h1 id=font-color92d050typescript-fundamentalsfont><span class=hanchor arialabel=Anchor># </span><font color=#92d050>TypeScript Fundamentals</font></h1></a><hr><a href=#font-color7030a0对象数值和元组font><h2 id=font-color7030a0对象数值和元组font><span class=hanchor arialabel=Anchor># </span><font color=#7030a0>对象，数值和元组</font></h2></a><blockquote><p>现在我们知道了如何键入简单的变量和函数，让我们做一些事情集合更有趣一点：在 JavaScript 中，这包括对象和数组。</p></blockquote><a href=#font-colorffc000可选类型font><h3 id=font-colorffc000可选类型font><span class=hanchor arialabel=Anchor># </span><font color=#ffc000>可选类型</font></h3></a><blockquote><p>我们可以使用以下运算符声明此属性是可选的：<code>?</code></p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -214,7 +214,12 @@ Feb 28, 2023
 </span></span><span class=line><span class=cl><span class=kd>var</span> <span class=nx>sites</span><span class=o>:</span><span class=nx>string</span><span class=p>[]</span> <span class=o>=</span> <span class=k>new</span> <span class=nb>Array</span><span class=p>(</span><span class=s2>&#34;Google&#34;</span><span class=p>,</span><span class=s2>&#34;Runoob&#34;</span><span class=p>,</span><span class=s2>&#34;Taobao&#34;</span><span class=p>,</span><span class=s2>&#34;Facebook&#34;</span><span class=p>)</span>
 </span></span></code></pre></td></tr></table></div></div><blockquote><p>如果数组声明时未设置类型，则会被认为是 any 类型，在初始化时根据第一个元素的类型来推断数组的类型。</p></blockquote><blockquote><p>多维数组</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=kd>var</span> <span class=nx>arr_name</span>:<span class=kt>datatype</span><span class=p>[][]</span><span class=o>=</span><span class=p>[</span> <span class=p>[</span><span class=nx>val1</span><span class=p>,</span><span class=nx>val2</span><span class=p>,</span><span class=nx>val3</span><span class=p>],[</span><span class=nx>v1</span><span class=p>,</span><span class=nx>v2</span><span class=p>,</span><span class=nx>v3</span><span class=p>]</span> <span class=p>]</span>
-</span></span></code></pre></td></tr></table></div></div><blockquote><p>🐱‍👤 元组</p></blockquote><blockquote><p>可以为每一个变量分配类型</p></blockquote><p>局限性</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>🐱‍👤 元组</p></blockquote><blockquote><p>可以为每一个变量分配类型我们知道数组中元素的数据类型都一般是相同的（any[] 类型的数组可
+不同），如果存储的元素数据类型不同，则需要使用元组。组中允许存储不同类型的元素，元组可
+以作为参数传递给函数。
+创建元组的语法格式如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=nx>Var</span> <span class=nx>tuple_name</span> <span class=o>=</span> <span class=p>[</span><span class=nx>value</span> <span class=mi>1</span><span class=p>,</span> <span class=nx>value</span> <span class=mi>2</span><span class=p>,</span> <span class=nx>value</span> <span class=mi>3</span><span class=p>,</span><span class=err>…</span><span class=nx>value</span> <span class=nx>n</span><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback></code></pre></td></tr></table></div></div><p>局限性</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -248,4 +253,304 @@ Feb 28, 2023
 </span></span><span class=line><span class=cl><span class=err>现在支持只读：</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>numPair</span>: <span class=kt>readonly</span> <span class=p>[</span><span class=kt>number</span><span class=p>,</span> <span class=kt>number</span><span class=p>]</span> <span class=o>=</span> <span class=p>[</span><span class=mi>4</span><span class=p>,</span> <span class=mi>5</span><span class=p>]</span>
-</span></span></code></pre></td></tr></table></div></div><hr><h2 id=font-color205867结构类型与标称类型fonthttpswwwtypescript-trainingcomcoursefundamentals-v305-structural-vs-nominal-types><a href=https://www.typescript-training.com/course/fundamentals-v3/05-structural-vs-nominal-types/ rel=noopener><font color=#205867>结构类型与标称类型</font></a></h2></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://wangc.tech/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by Majmunu using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://wangc.tech/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/Majmunu>GitHub</a></li></ul></footer></div></div></body></html>
+</span></span></code></pre></td></tr></table></div></div><hr><h2 id=font-color205867结构类型与标称类型fonthttpswwwtypescript-trainingcomcoursefundamentals-v305-structural-vs-nominal-types><a href=https://www.typescript-training.com/course/fundamentals-v3/05-structural-vs-nominal-types/ rel=noopener><font color=#205867>结构类型与标称类型</font></a></h2><a href=#什么是类型检查><h3 id=什么是类型检查><span class=hanchor arialabel=Anchor># </span>什么是类型检查？</h3></a><p>类型检查可以被认为是一个尝试评估的任务 _兼容性_或_类型等效性_问题：</p><p>将类型系统分类为
+<a href=https://www.typescriptlang.org/docs/handbook/2/basic-types.html#static-type-checking rel=noopener>静态</a>或动态与类型检查是否有关 <strong>在编译时或运行时</strong>执行。</p><blockquote><p><strong>TypeScript 的类型系统是静态的。</strong>
+<a href=https://www.typescriptlang.org/docs/handbook/2/basic-types.html#static-type-checking rel=noopener>关于静态类型见检查(typescriptlang.org)</a></p></blockquote><blockquote><p>Java，C # C ++都属于这一类。请记住，推断仍然可以发生在静态类型系统中——TypeScript、Scala 和 Haskell 都有某种形式的静态类型检查。</p></blockquote><p><strong>动态类型系统在运行时执行其“类型等效性”评估</strong>。JavaScript， Python， Ruby，Perl 和 PHP 属于这一类。</p><a href=#font-colorb2a2c7标称与结构font><h3 id=font-colorb2a2c7标称与结构font><span class=hanchor arialabel=Anchor># </span><font color=#b2a2c7>标称与结构</font></h3></a><p><strong>标称型系统都是关于名称的</strong>。让我们看一个简单的 Java 示例：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>public</span> <span class=kd>class</span> <span class=nc>Car</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>String</span> <span class=n>make</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>String</span> <span class=n>model</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=n>make</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kd>class</span> <span class=nc>CarChecker</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// takes a `Car` argument, returns a `String`
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kd>static</span> <span class=n>String</span> <span class=nf>printCar</span><span class=o>(</span><span class=n>Car</span> <span class=n>car</span><span class=o>)</span> <span class=o>{</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Car</span> <span class=n>myCar</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Car</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// TYPE CHECKING
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// -------------
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// Is `myCar` type-equivalent to
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// what `checkCar` wants as an argument?
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=n>CarChecker</span><span class=o>.</span><span class=na>checkCar</span><span class=o>(</span><span class=n>myCar</span><span class=o>);</span>
+</span></span></code></pre></td></tr></table></div></div><p>在上面的代码中，当考虑最后一行的类型等价问题时，重要的是类的实例是否<strong>名为</strong> 。<code>myCar``Car</code></p><blockquote><p>打字稿类型系统是结构化的</p></blockquote><p>结构<strong>类型系统都是关于结构或形状</strong>的。让我们看一个 TypeScript 示例：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=kr>class</span> <span class=nx>Car</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>make</span>: <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>model</span>: <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>year</span>: <span class=kt>number</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>isElectric</span>: <span class=kt>boolean</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>class</span> <span class=nx>Truck</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>make</span>: <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>model</span>: <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>year</span>: <span class=kt>number</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>towingCapacity</span>: <span class=kt>number</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>vehicle</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>make</span><span class=o>:</span> <span class=s2>&#34;Honda&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>model</span><span class=o>:</span> <span class=s2>&#34;Accord&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>year</span>: <span class=kt>2017</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>printCar</span><span class=p>(</span><span class=nx>car</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>make</span>: <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>model</span>: <span class=kt>string</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>year</span>: <span class=kt>number</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>})</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`</span><span class=si>${</span><span class=nx>car</span><span class=p>.</span><span class=nx>make</span><span class=si>}</span><span class=sb> </span><span class=si>${</span><span class=nx>car</span><span class=p>.</span><span class=nx>model</span><span class=si>}</span><span class=sb> (</span><span class=si>${</span><span class=nx>car</span><span class=p>.</span><span class=nx>year</span><span class=si>}</span><span class=sb>)`</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>printCar</span><span class=p>(</span><span class=k>new</span> <span class=nx>Car</span><span class=p>())</span> <span class=c1>// Fine
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nx>printCar</span><span class=p>(</span><span class=k>new</span> <span class=nx>Truck</span><span class=p>())</span> <span class=c1>// Fine
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nx>printCar</span><span class=p>(</span><span class=nx>vehicle</span><span class=p>)</span> <span class=c1>// Fine
+</span></span></span></code></pre></td></tr></table></div></div><p><a href=https://www.typescriptlang.org/play/#code/PTAEAEGcBcCcEsDG0AKsD2AHApraBPASQDt5p4BDAG3gC8Lz1iAuUAM2smwChEqLIkUAGEKsUAG9uoUAFsKAa2ysYCYgHNpc9ABNsVFXHgat+bGNbEArrIBGuLfEgBRKtmQJErW+nRuKxNwAvty8-IKgACqwVogKklrySoZqmjKyuvopxmmgZhag1nYOMtDoAO45opgUiGT4ljb2sMGhiEwwoABu2AAWSG6gALwJ6YrKoABEABJMOhSTADSJmQZTAIKI7bA6S6bmsKwATAAMAIwA7Msh3GxWxMjwTKCYatCisAAUiAVSY8mgVQ5FZ6NZAkwyfKHQpNBxBACUo1A7WIkD82AAdFR0OpPgADAAkEh+sAxSWwQVARJJZNWlM+1LEGKhCLx8Na3FexneYk+xGw5REvPhiJAoAAYsYeFziDyvvzBdFYgpPiLQGLJfzOW8Pp8ev0+NhRWBNdggA rel=noopener>Try</a></p><p>该函数不关心它的参数来自哪个构造函数从，它只关心它是否有：<code>printCar</code></p><ul><li>类型的属性 <code>make``string</code></li><li>类型的属性 <code>model``string</code></li><li>类型的属性 <code>year``number</code></li></ul><p>如果传递给它的参数满足这些要求，则很高兴。<code>printCar</code></p><a href=#font-color548dd4鸭子打字font><h3 id=font-color548dd4鸭子打字font><span class=hanchor arialabel=Anchor># </span><font color=#548dd4>鸭子打字</font></h3></a><p>“鸭子打字”得名于“鸭子测试”。</p><blockquote><p>“如果它看起来像鸭子，像鸭子一样游泳，像鸭子一样嘎嘎叫，那么它很可能是一只鸭子”。</p></blockquote><p>在实践中，这与结构类型非常相似，但“鸭子类型”通常是用于描述动态类型系统。</p><a href=#font-color548dd4强与弱类型font><h3 id=font-color548dd4强与弱类型font><span class=hanchor arialabel=Anchor># </span>“<font color=#548dd4>强”与“弱”类型</font></h3></a><p>这些术语虽然经常使用，但没有商定的技术定义。在 TypeScript 对于那些说“强”的人来说，真正意味着“静态”是很常见的。</p><a href=#font-colord99694并集和交集类型font><h2 id=font-colord99694并集和交集类型font><span class=hanchor arialabel=Anchor># </span><font color=#d99694>并集和交集类型</font></h2></a><a href=#并集和交集类型概念上><h3 id=并集和交集类型概念上><span class=hanchor arialabel=Anchor># </span>并集和交集类型，概念上</h3></a><p>在概念上可以将联合和交集类型视为逻辑布尔运算符 （， ），因为它们与类型有关。让我们看看这组重叠的两个以项目集为例：<code>AND``OR</code>
+<img src=https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230301112440.png width=auto alt>
+联合类型有一个
+<a href=https://en.wikipedia.org/wiki/Union_ rel=noopener>非常具体的技术定义</a>，它来自集合论，但是对于<strong>类型，将其视为 OR</strong>是完全可以的。</p><p>在上图中，如果我们有一个类型，它将包括 整个图表上的每个项目。<code>Fruit OR Sour</code></p><p>交集类型也有
+<a href=https://en.wikipedia.org/wiki/Intersection_%28set_theory%29 rel=noopener>名称 以及来自集合论的定义</a>， 但对于**类型，**它们可以被认为是 AND。</p><p>在上面的同一张图中，如果我们想要的_水果也是酸的（_），我们最终会得到只得到. <code>Fruit AND Sour``{ Lemon, Lime, Grapefruit }</code></p><a href=#typescript-中的联合类型><h3 id=typescript-中的联合类型><span class=hanchor arialabel=Anchor># </span>TypeScript 中的联合类型</h3></a><p>TypeScript 中的联合类型可以使用 （pipe） 运算符进行描述。<code>|</code></p><p>例如，如果我们有一个类型可以是两个字符串之一，或者，我们可以将其定义为 <code>"success"``"error"</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=s2>&#34;success&#34;</span> <span class=o>|</span> <span class=s2>&#34;error&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>例如，如果从中选择的数字为 >= 0.5，或者如果 &lt;=0.5，则该函数将返回。<code>flipCoin()``"heads"``(0, 1)``"tails"</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=kd>function</span> <span class=nx>flipCoin</span><span class=p>()</span><span class=o>:</span> <span class=s2>&#34;heads&#34;</span> <span class=o>|</span> <span class=s2>&#34;tails&#34;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nb>Math</span><span class=p>.</span><span class=nx>random</span><span class=p>()</span> <span class=o>&gt;</span> <span class=mf>0.5</span><span class=p>)</span> <span class=k>return</span> <span class=s2>&#34;heads&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>return</span> <span class=s2>&#34;tails&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>outcome</span> <span class=o>=</span> <span class=nx>flipCoin</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>outcome</span><span class=o>:</span> <span class=s2>&#34;heads&#34;</span> <span class=o>|</span> <span class=s2>&#34;tails&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p>让我们通过使用元组使它更有趣一些，元组的结构如下：</p><ul><li><p><code>[0]</code>要么或<code>"success"``"failure"</code></p></li><li><p><code>[1]</code>不同的东西，具体取决于在 中找到的值<code>[0]</code></p><ul><li><code>"success"</code>案例：一条联系方式：<code>{ name: string; email: string; }</code></li><li><code>"error"</code>案例：一个实例<code>Error</code></li></ul></li></ul><p>我们仍然会根据上面的 50/50 硬币翻转来决定这些事情中的哪一件实际发生。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=kd>function</span> <span class=nx>flipCoin</span><span class=p>()</span><span class=o>:</span> <span class=s2>&#34;heads&#34;</span> <span class=o>|</span> <span class=s2>&#34;tails&#34;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nb>Math</span><span class=p>.</span><span class=nx>random</span><span class=p>()</span> <span class=o>&gt;</span> <span class=mf>0.5</span><span class=p>)</span> <span class=k>return</span> <span class=s2>&#34;heads&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>return</span> <span class=s2>&#34;tails&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>maybeGetUserInfo</span><span class=p>()</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>|</span> <span class=p>[</span><span class=s2>&#34;error&#34;</span><span class=p>,</span> <span class=nb>Error</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>|</span> <span class=p>[</span><span class=s2>&#34;success&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>name</span>: <span class=kt>string</span><span class=p>;</span> <span class=nx>email</span>: <span class=kt>string</span> <span class=p>}]</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nx>flipCoin</span><span class=p>()</span> <span class=o>===</span> <span class=s2>&#34;heads&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>return</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=s2>&#34;success&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>{</span> <span class=nx>name</span><span class=o>:</span> <span class=s2>&#34;Mike North&#34;</span><span class=p>,</span> <span class=nx>email</span><span class=o>:</span> <span class=s2>&#34;mike@example.com&#34;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>return</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=s2>&#34;error&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>new</span> <span class=nb>Error</span><span class=p>(</span><span class=s2>&#34;The coin landed on TAILS :(&#34;</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>outcome</span> <span class=o>=</span> <span class=nx>maybeGetUserInfo</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>outcome</span><span class=o>:</span> <span class=p>[</span><span class=s2>&#34;error&#34;</span><span class=p>,</span> <span class=nb>Error</span><span class=p>]</span> <span class=o>|</span> <span class=p>[</span><span class=s2>&#34;success&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>name</span>: <span class=kt>string</span><span class=p>;</span> <span class=nx>email</span>: <span class=kt>string</span><span class=p>;</span> <span class=p>}]</span>
+</span></span></code></pre></td></tr></table></div></div><p>这种类型明显更有趣。</p><a href=#使用联合类型><h3 id=使用联合类型><span class=hanchor arialabel=Anchor># </span>使用联合类型</h3></a><p>让我们继续上面的示例，并尝试使用 “结果”值。</p><p>首先，让我们解构元组，看看 TypeScript 对其成员的看法</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=kr>const</span> <span class=nx>outcome</span> <span class=o>=</span> <span class=nx>maybeGetUserInfo</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=p>[</span><span class=nx>first</span><span class=p>,</span> <span class=nx>second</span><span class=p>]</span> <span class=o>=</span> <span class=nx>outcome</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>first</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>first</span><span class=o>:</span> <span class=s2>&#34;error&#34;</span> <span class=o>|</span> <span class=s2>&#34;success&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>second</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>second</span>: <span class=kt>Error</span> <span class=o>|</span> <span class=p>{</span> <span class=nx>name</span>: <span class=kt>string</span><span class=p>;</span> <span class=nx>email</span>: <span class=kt>string</span><span class=p>;</span> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-mysql data-lang=mysql><span class=line><span class=cl><span class=err>单击按钮并在</span><span class=w> </span><span class=n>TS</span><span class=w> </span><span class=err>操场中探索。</span><span class=w> </span><span class=err>探索自动完成功能中针对每个选项的可用功能。</span><span class=o>`</span><span class=n>Try</span><span class=o>``</span><span class=n>first</span><span class=o>``</span><span class=n>second</span><span class=o>`</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://wangc.tech/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by Majmunu using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://wangc.tech/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/Majmunu>GitHub</a></li></ul></footer></div></div></body></html>
