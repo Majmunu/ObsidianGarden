@@ -7,7 +7,8 @@ obsidianUIMode: preview
 --- `button-homewp`  `button-browsevault`  `button-browsenext` `button-browserefresh` 
 %% Begin Waypoint %%
 - **[[JavaScript]]**
-	- **[[数组/数组]]**
+	- **[[数组]]**
 	- [[Aarry]]
+	- [[Object Oriented]]
 
 %% End Waypoint %%
