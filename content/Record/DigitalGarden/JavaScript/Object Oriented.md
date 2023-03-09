@@ -46,3 +46,6 @@ Update: NaN
 ---
 ## 默认原型链
 ![](https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230307180635.png)
+
+### 函数原型和数组原型
+![](https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230308094243.png)
