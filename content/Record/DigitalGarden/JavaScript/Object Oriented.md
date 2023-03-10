@@ -49,3 +49,12 @@ Update: NaN
 
 ### 函数原型和数组原型
 ![](https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230308094243.png)
+
+## 工厂函数
+### 子类化和继承简介
+![](https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230310154716.png)
+
+### 使用工厂函数创建对象
+![](https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230310160653.png)
+
+![](https://wcc-image.oss-cn-guangzhou.aliyuncs.com/image/20230310160933.png)

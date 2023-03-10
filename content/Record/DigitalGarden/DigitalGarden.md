@@ -15,11 +15,13 @@ obsidianUIMode: preview
 	- **[[git]]**
 	- **[[JavaScript]]**
 	- [[MarkDown语法 超详细教程]]
-	- **Nebulas**
+	- **[[Nebulas]]**
 	- **[[NextJs]]**
 	- **[[Node]]**
 	- **[[React]]**
 	- **[[Typescript]]**
 	- [[Vscode快捷键]]
+	- **[[WebStorage]]**
+		- [[WebStorageAPIs]]
 
 %% End Waypoint %%
