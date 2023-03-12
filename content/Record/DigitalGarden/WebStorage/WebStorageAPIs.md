@@ -1,8 +1,7 @@
 ---
 UID: 20230309162603 
 title: WebStorageAPIs
-tags: 
--- WebStorage
+tags: WebStorage
 created: 2023-03-09
 Update: NaN
 ---
