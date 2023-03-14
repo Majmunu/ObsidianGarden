@@ -11,26 +11,17 @@ obsidianUIMode: preview
 	- [[杂技]]
 	- **[[Antd]]**
 	- [[catalogue]]
-	- **Css**
-		- [[样式规范]]
-		- [[CSS]]
-		- [[Grid 布局]]
-		- [[SCSS]]
+	- **[[Css]]**
 	- **[[git]]**
-	- **JavaScript**
-		- **[[数组]]**
-		- [[Aarry]]
-		- [[JAVASCRIPT]]
-		- [[Object Oriented]]
+	- **[[JavaScript]]**
 	- [[MarkDown语法 超详细教程]]
 	- **[[Nebulas]]**
 	- **[[NextJs]]**
 	- **[[Node]]**
 	- **[[React]]**
-	- **Typescript**
-		- [[TypeScript Fundamentals]]
-		- [[TYPESCRIPT]]
+	- **[[Typescript]]**
 	- [[Vscode快捷键]]
+	- **[[WebGL]]**
 	- **[[WebStorage]]**
 
 %% End Waypoint %%
