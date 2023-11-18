@@ -35,6 +35,8 @@ enableToc: false
 >🍑 [[Record/DigitalGarden/NextJs/NextJs]]
 
 >🍅 [[Record/DigitalGarden/React/REACT]]
+ 
+>🥝 [[Record/DigitalGarden/Vue/Vue]]
 
 >🍒 [[Record/DigitalGarden/Typescript/TYPESCRIPT]]
 
