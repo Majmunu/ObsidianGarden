@@ -1,0 +1,6 @@
+[v-bind 和 v-model 的区别如下](https://www.bing.com/ck/a?!&&p=3187921a3240f948JmltdHM9MTY5OTIyODgwMCZpZ3VpZD0yNjA2ODFkYy1jZDU3LTY4MGMtMDIzZS05MjViY2NmZDY5Y2YmaW5zaWQ9NTYxNg&ptn=3&hsh=3&fclid=260681dc-cd57-680c-023e-925bccfd69cf&psq=v-bind%e5%92%8cv-model%e7%9a%84%e5%8c%ba%e5%88%ab&u=a1aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xldGlhbnhmL2FydGljbGUvZGV0YWlscy8xMjg0MjkyOTQ&ntb=1)[1](https://www.bing.com/ck/a?!&&p=974bb13a86919c24JmltdHM9MTY5OTIyODgwMCZpZ3VpZD0yNjA2ODFkYy1jZDU3LTY4MGMtMDIzZS05MjViY2NmZDY5Y2YmaW5zaWQ9NTYxNw&ptn=3&hsh=3&fclid=260681dc-cd57-680c-023e-925bccfd69cf&psq=v-bind%e5%92%8cv-model%e7%9a%84%e5%8c%ba%e5%88%ab&u=a1aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xldGlhbnhmL2FydGljbGUvZGV0YWlscy8xMjg0MjkyOTQ&ntb=1)[2](https://www.bing.com/ck/a?!&&p=fccdea317324c747JmltdHM9MTY5OTIyODgwMCZpZ3VpZD0yNjA2ODFkYy1jZDU3LTY4MGMtMDIzZS05MjViY2NmZDY5Y2YmaW5zaWQ9NTYxOA&ptn=3&hsh=3&fclid=260681dc-cd57-680c-023e-925bccfd69cf&psq=v-bind%e5%92%8cv-model%e7%9a%84%e5%8c%ba%e5%88%ab&u=a1aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vcWluZ2hlc2hpZ3VhbmcvcC8xNDY2MTY2My5odG1s&ntb=1):
+
+- v-bind 是单向绑定，只能将 vue 中的数据同步到页面，可以给任何属性赋值。
+- v-model 是双向绑定，不仅可以将 vue 中的数据同步到页面，而且可以将用户数据的数据赋值给 vue 中的属性，只能给具备 value 属性的元素进行数据双向绑定。
+- v-model 基本上只用在表单元素上，而 v-bind 可以在任何有效元素上使用。
+- 当 v-bind 和 v-model 同时用在一个元素上时，它们各自的作用没变，但 v-model 优先级更高，而且需区分这个元素是单个的还是一组出现的。
